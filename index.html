@@ -1,6 +1,12 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
-<h1>Cats</h1>
-  <p>Home page for site</p>
+
+{% for post in site.posts %}
+
+<!-- TODO figure out how to extract this as a partial  -->
+<h3><a href="{{ post.url }}">{{ post.title }}</a> | published {{ post.date }}</h3> 
+
+{% endfor %}
+  
