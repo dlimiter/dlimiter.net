@@ -2,6 +2,12 @@
 layout:   default
 title:    Blog 
 ---
+
+<p>
+Thoughts, interests, inspirations, tips and unsolicited opinions of a coder and designer.
+</p>
+
+
 <ul class="recent-posts">
   {% for post in site.posts limit:3%}
   <li>
@@ -9,4 +15,5 @@ title:    Blog
   </li>
   {% endfor %}
 </ul>
-<a href="{{ site.url }}/archive/">Archive</a>
+
+<a href="{{ site.url }}/archive/">Read more in the archive &rarr;</a>

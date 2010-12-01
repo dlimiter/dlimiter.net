@@ -23,10 +23,13 @@ function initArchive() {
 
 function filterByCategory(className) {
   if (className === 'reset' || $("nav#post-archive-list li."+className).length == 0 ) {
+    $("#post-archive-category-list a").removeClass("selected");
     $("nav#post-archive-list li").slideDown("fast");    
   } else {
+    $("#post-archive-category-list a").removeClass("selected");
     $("nav#post-archive-list li."+className).slideDown("fast");
     $("nav#post-archive-list li:not(."+className+")").slideUp("fast");
+    $("#post-archive-category-list a."+className).addClass("selected");
   }  
 }
 

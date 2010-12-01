@@ -5,11 +5,13 @@ layout: default
 <!-- Unabridged post content -->
 <article class="post">
   <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-  <div id="post-date">published {{ page.date | date_to_string }}</div>
-  <div id="post-categories">
+  <div class="post date">published {{ page.date | date_to_string }}</div>
+  <div class="post categories">
 filed under {% for category in page.categories %}<a href="{{ site.url }}/archive/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %}
   </div>
-  {{ content }}
+  <div class="post content">
+    {{ content }}    
+  </div>
 </article>
 
 <!-- Disqus Comments handling -->
@@ -22,7 +24,6 @@ filed under {% for category in page.categories %}<a href="{{ site.url }}/archive
       var disqus_url = '{{ page.url }}';
       /** Variable to allow local testing - remove for live deployment **/
       var disqus_developer = 1;
-
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';

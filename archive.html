@@ -2,27 +2,31 @@
 layout:   default
 title:    Archive 
 ---
-<div class="span-10">
-  <nav id="post-archive-list">
-    <ul>
-      {% for post in site.posts %}        
-        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a>|{% for category in post.categories %}{{ category }} {% endfor %}</li>
 
-      {% endfor %}
-    </ul>
-  <nav>
+<p>
+  This is a complete listing of all my published blog posts.
+</p>
+<p>
+  You can filter archived posts by selecting one of the following categories: 
+</p>
+<div id="post-archive-category-list">
+  <p>    
+    {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a> {% endfor %}      
+  </p>
 </div>
-  
-<div class="span-2 last">
-  <p>You can also filter archived posts by category:</p>   
-  <ul id="category-filter-list">
-    {% for category in site.categories %}
-    <li><a href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a></li>
-    {% endfor %}      
-    
+<p>
+  Or you can clear the filter and <a href="javascript:filterByCategory('reset')">show all the posts &rarr;</a>
+</p>
+
+<nav id="post-archive-list">
+  <ul>
+    {% for post in site.posts %}        
+      <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a class="title" href="{{ post.url }}">{{ post.title }}</a>|{% for category in post.categories %}{{ category }} {% endfor %}</li>
+
+    {% endfor %}
   </ul>
-  <p><a href="javascript:filterByCategory('reset')">Clear filter</a></p>
-</div>  
+<nav>
+  
 
 <script type="text/javascript" charset="utf-8">
   window.onload=initArchive();

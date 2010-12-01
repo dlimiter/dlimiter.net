@@ -1,5 +1,18 @@
-<article class="post-excerpt">
-  <h3><a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date: "%d %b %Y" }}</h3> 
-  <div class="excerpt-body">{{ post.content | truncatewords: 15, "..." }}</div>
-  <div class="post-categories">filed under {% for category in post.categories %}<a href="{{ site.url }}/archive/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %}</div>
+<article class="post excerpt">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
+  <div class="post excerpt byline">
+    <p>
+      Filed under {% for category in post.categories %}<a href="{{ site.url }}/archive/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %} on {{ post.date | date: "%d %b, %Y" }}
+    </p>
+  </div>
+  <div class="post excerpt content">
+    <p>
+      <em>{{ post.content | truncatewords: 15, "..." }}</em>
+    </p>
+  </div>
+  <div class="post excerpt read-more">
+    <p>
+      <a href="{{ post.url }}">read more &rarr;</a>
+    </p>
+  </div>
 </article>
