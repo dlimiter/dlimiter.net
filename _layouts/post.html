@@ -5,8 +5,30 @@ layout: default
 <!-- Unabridged post content -->
 <article class="post">
   <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-  <div id="date">published {{ page.date | date_to_string }}</div>
+  <div id="post-date">published {{ page.date | date_to_string }}</div>
+  <div id="post-categories">
+filed under {% for category in page.categories %}<a href="{{ site.url }}/archive/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %}
+  </div>
   {{ content }}
 </article>
 
 <!-- Disqus Comments handling -->
+<a href="javascript:toggleComments()" id="comment-toggle">Show Comments</a> 
+<div id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'dlimiternet'; 
+      var disqus_identifier = '{{ page.url }}';
+      var disqus_url = '{{ page.url }}';
+      /** Variable to allow local testing - remove for live deployment **/
+      var disqus_developer = 1;
+
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>

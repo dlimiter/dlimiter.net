@@ -1,0 +1,30 @@
+---
+layout:   default
+title:    Archive 
+---
+<div class="span-10">
+  <nav id="post-archive-list">
+    <ul>
+      {% for post in site.posts %}        
+        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a>|{% for category in post.categories %}{{ category }} {% endfor %}</li>
+
+      {% endfor %}
+    </ul>
+  <nav>
+</div>
+  
+<div class="span-2 last">
+  <p>You can also filter archived posts by category:</p>   
+  <ul id="category-filter-list">
+    {% for category in site.categories %}
+    <li><a href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a></li>
+    {% endfor %}      
+    
+  </ul>
+  <p><a href="javascript:filterByCategory('reset')">Clear filter</a></p>
+</div>  
+
+<script type="text/javascript" charset="utf-8">
+  window.onload=initArchive();
+</script>
+

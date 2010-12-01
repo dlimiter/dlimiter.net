@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Blog
+layout:   default
+title:    Blog 
 ---
-
-{% for post in site.posts %}
-
-<!-- TODO figure out how to extract this as a partial  -->
-<h3><a href="{{ post.url }}">{{ post.title }}</a> | published {{ post.date }}</h3> 
-
-{% endfor %}
-  
+<ul class="recent-posts">
+  {% for post in site.posts limit:3%}
+  <li>
+    {% include post_excerpt.html %}
+  </li>
+  {% endfor %}
+</ul>
+<a href="{{ site.url }}/archive/">Archive</a>

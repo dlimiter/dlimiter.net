@@ -1,0 +1,127 @@
+/* 
+ * Global 
+ */
+ 
+html {
+  background-color: #333;
+} 
+
+body {
+  font-family:"Helvetica Neue", Helvetica, Arial,sans-serif;
+  font-size: 90%;
+}
+ 
+.container {
+  margin:0 auto;
+} 
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:active  {
+  color:#6f916f;  
+  
+}
+
+a:hover {
+  border-bottom: 1px dotted #6f916f;
+}
+
+/*
+ * Nav
+ */
+nav li {
+  display: block;
+  margin:0;
+  padding:0;
+}
+
+nav ul, ul#category-filter-list {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+
+/* 
+ * Header 
+ */
+header {
+  background-color:#ccc;
+  border-top: 5px solid #000;
+}
+header h1 {
+  margin: 10px 0;
+}
+
+nav#main {
+  background-color:#eee;
+  border-bottom: 1px dotted #ccc;
+}
+
+nav#main li {
+  float:left;
+}
+
+
+nav#main a {
+  font-size:80%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display:block;
+  padding:5px;
+}
+
+nav#main a:link, nav#main a:visited, nav#main a:active  {
+  color:#666;  
+  
+}
+
+nav#main a:hover {
+  border-bottom: 0;
+  color:#6f916f;
+}
+
+/* 
+ * Content 
+ */
+#content {
+  padding:10px 0;
+}
+
+ul.recent-posts {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+/* 
+ * Footer 
+ */ 
+footer {
+   background-color: #333;
+   color:#ddd;
+   margin:0;
+   padding:5px 0;
+ }
+
+footer h1, footer h2, footer h3, footer h4, footer h5  {
+  color:#ddd;
+}
+
+footer #copyright {
+  font-size:75%;
+  width:100%;
+  padding-top:5px;
+  margin:0;
+  border-top: 1px solid #ddd;
+}
+
+/* 
+ * Comments
+ */
+#comments {
+  display:none;
+}
