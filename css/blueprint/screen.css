@@ -104,84 +104,84 @@ form.inline p {margin-bottom:0;}
 .info a {color:#205791;}
 
 /* grid.css */
-.container {width:650px;margin:0 auto;}
+.container {width:710px;margin:0 auto;}
 .showgrid {background:url(src/grid.png);}
 .column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12 {float:left;margin-right:10px;}
 .last {margin-right:0;}
-.span-1 {width:45px;}
-.span-2 {width:100px;}
-.span-3 {width:155px;}
-.span-4 {width:210px;}
-.span-5 {width:265px;}
-.span-6 {width:320px;}
-.span-7 {width:375px;}
-.span-8 {width:430px;}
-.span-9 {width:485px;}
-.span-10 {width:540px;}
-.span-11 {width:595px;}
-.span-12 {width:650px;margin-right:0;}
+.span-1 {width:50px;}
+.span-2 {width:110px;}
+.span-3 {width:170px;}
+.span-4 {width:230px;}
+.span-5 {width:290px;}
+.span-6 {width:350px;}
+.span-7 {width:410px;}
+.span-8 {width:470px;}
+.span-9 {width:530px;}
+.span-10 {width:590px;}
+.span-11 {width:650px;}
+.span-12 {width:710px;margin-right:0;}
 input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12 {border-left-width:1px;border-right-width:1px;padding-left:5px;padding-right:5px;}
-input.span-1, textarea.span-1 {width:33px;}
-input.span-2, textarea.span-2 {width:88px;}
-input.span-3, textarea.span-3 {width:143px;}
-input.span-4, textarea.span-4 {width:198px;}
-input.span-5, textarea.span-5 {width:253px;}
-input.span-6, textarea.span-6 {width:308px;}
-input.span-7, textarea.span-7 {width:363px;}
-input.span-8, textarea.span-8 {width:418px;}
-input.span-9, textarea.span-9 {width:473px;}
-input.span-10, textarea.span-10 {width:528px;}
-input.span-11, textarea.span-11 {width:583px;}
-input.span-12, textarea.span-12 {width:638px;}
-.append-1 {padding-right:55px;}
-.append-2 {padding-right:110px;}
-.append-3 {padding-right:165px;}
-.append-4 {padding-right:220px;}
-.append-5 {padding-right:275px;}
-.append-6 {padding-right:330px;}
-.append-7 {padding-right:385px;}
-.append-8 {padding-right:440px;}
-.append-9 {padding-right:495px;}
-.append-10 {padding-right:550px;}
-.append-11 {padding-right:605px;}
-.prepend-1 {padding-left:55px;}
-.prepend-2 {padding-left:110px;}
-.prepend-3 {padding-left:165px;}
-.prepend-4 {padding-left:220px;}
-.prepend-5 {padding-left:275px;}
-.prepend-6 {padding-left:330px;}
-.prepend-7 {padding-left:385px;}
-.prepend-8 {padding-left:440px;}
-.prepend-9 {padding-left:495px;}
-.prepend-10 {padding-left:550px;}
-.prepend-11 {padding-left:605px;}
+input.span-1, textarea.span-1 {width:38px;}
+input.span-2, textarea.span-2 {width:98px;}
+input.span-3, textarea.span-3 {width:158px;}
+input.span-4, textarea.span-4 {width:218px;}
+input.span-5, textarea.span-5 {width:278px;}
+input.span-6, textarea.span-6 {width:338px;}
+input.span-7, textarea.span-7 {width:398px;}
+input.span-8, textarea.span-8 {width:458px;}
+input.span-9, textarea.span-9 {width:518px;}
+input.span-10, textarea.span-10 {width:578px;}
+input.span-11, textarea.span-11 {width:638px;}
+input.span-12, textarea.span-12 {width:698px;}
+.append-1 {padding-right:60px;}
+.append-2 {padding-right:120px;}
+.append-3 {padding-right:180px;}
+.append-4 {padding-right:240px;}
+.append-5 {padding-right:300px;}
+.append-6 {padding-right:360px;}
+.append-7 {padding-right:420px;}
+.append-8 {padding-right:480px;}
+.append-9 {padding-right:540px;}
+.append-10 {padding-right:600px;}
+.append-11 {padding-right:660px;}
+.prepend-1 {padding-left:60px;}
+.prepend-2 {padding-left:120px;}
+.prepend-3 {padding-left:180px;}
+.prepend-4 {padding-left:240px;}
+.prepend-5 {padding-left:300px;}
+.prepend-6 {padding-left:360px;}
+.prepend-7 {padding-left:420px;}
+.prepend-8 {padding-left:480px;}
+.prepend-9 {padding-left:540px;}
+.prepend-10 {padding-left:600px;}
+.prepend-11 {padding-left:660px;}
 .border {padding-right:4px;margin-right:5px;border-right:1px solid #ddd;}
-.colborder {padding-right:32px;margin-right:32px;border-right:1px solid #ddd;}
-.pull-1 {margin-left:-55px;}
-.pull-2 {margin-left:-110px;}
-.pull-3 {margin-left:-165px;}
-.pull-4 {margin-left:-220px;}
-.pull-5 {margin-left:-275px;}
-.pull-6 {margin-left:-330px;}
-.pull-7 {margin-left:-385px;}
-.pull-8 {margin-left:-440px;}
-.pull-9 {margin-left:-495px;}
-.pull-10 {margin-left:-550px;}
-.pull-11 {margin-left:-605px;}
-.pull-12 {margin-left:-660px;}
+.colborder {padding-right:34px;margin-right:35px;border-right:1px solid #ddd;}
+.pull-1 {margin-left:-60px;}
+.pull-2 {margin-left:-120px;}
+.pull-3 {margin-left:-180px;}
+.pull-4 {margin-left:-240px;}
+.pull-5 {margin-left:-300px;}
+.pull-6 {margin-left:-360px;}
+.pull-7 {margin-left:-420px;}
+.pull-8 {margin-left:-480px;}
+.pull-9 {margin-left:-540px;}
+.pull-10 {margin-left:-600px;}
+.pull-11 {margin-left:-660px;}
+.pull-12 {margin-left:-720px;}
 .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12 {float:left;position:relative;}
-.push-1 {margin:0 -55px 1.5em 55px;}
-.push-2 {margin:0 -110px 1.5em 110px;}
-.push-3 {margin:0 -165px 1.5em 165px;}
-.push-4 {margin:0 -220px 1.5em 220px;}
-.push-5 {margin:0 -275px 1.5em 275px;}
-.push-6 {margin:0 -330px 1.5em 330px;}
-.push-7 {margin:0 -385px 1.5em 385px;}
-.push-8 {margin:0 -440px 1.5em 440px;}
-.push-9 {margin:0 -495px 1.5em 495px;}
-.push-10 {margin:0 -550px 1.5em 550px;}
-.push-11 {margin:0 -605px 1.5em 605px;}
-.push-12 {margin:0 -660px 1.5em 660px;}
+.push-1 {margin:0 -60px 1.5em 60px;}
+.push-2 {margin:0 -120px 1.5em 120px;}
+.push-3 {margin:0 -180px 1.5em 180px;}
+.push-4 {margin:0 -240px 1.5em 240px;}
+.push-5 {margin:0 -300px 1.5em 300px;}
+.push-6 {margin:0 -360px 1.5em 360px;}
+.push-7 {margin:0 -420px 1.5em 420px;}
+.push-8 {margin:0 -480px 1.5em 480px;}
+.push-9 {margin:0 -540px 1.5em 540px;}
+.push-10 {margin:0 -600px 1.5em 600px;}
+.push-11 {margin:0 -660px 1.5em 660px;}
+.push-12 {margin:0 -720px 1.5em 720px;}
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12 {float:left;position:relative;}
 div.prepend-top, .prepend-top {margin-top:1.5em;}
 div.append-bottom, .append-bottom {margin-bottom:1.5em;}

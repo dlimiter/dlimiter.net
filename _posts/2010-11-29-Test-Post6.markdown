@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hello World 6
+title:  Tutorial - Mobile Optimised JQuery Accordian VCard Website
 description: Hello world test post
 keywords: foo, bar
 categories: 

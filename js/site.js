@@ -35,9 +35,9 @@ function filterByCategory(className) {
 
 function toggleComments() {
   if ($("#comments").is(":visible")) {
-    $("a#comment-toggle").text("Show Comments");
+    $("a#comment-toggle").html("Show Comments");
   } else {
-    $("a#comment-toggle").text("Hide Comments");  
+    $("a#comment-toggle").html("Hide Comments");  
   }
   $("#comments").slideToggle();
 }

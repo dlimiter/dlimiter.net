@@ -1,0 +1,55 @@
+---
+layout:   default
+title:    Blog 
+---
+<div class="heading span-12 last">
+  <p>
+    Thoughts, interests, inspirations, tips and unsolicited opinions of a coder and designer.
+  </p>
+
+  <h2>Recent Posts</h2>
+</div>
+
+<div id="recent-posts">
+  {% for post in site.posts limit:2%}
+  {% if post == site.posts.first %}
+    <div class="span-6">
+  {% else %}
+    <div class="span-6 last">  
+  {% endif %}
+    {% include post_excerpt.html %}    
+  </div>
+  {% endfor %}
+</div>
+
+<div class="heading span-12 last">
+  <h2>Archive</h2>
+</div>
+<div class="span-12 last">
+  <p>
+    Below is a complete listing of all my published blog posts. 
+  </p>
+  <div id="post-archive-category-list">
+    <p>    
+      You can filter the list of posts by selecting one of the following categories: 
+    </p>
+    <p>
+      {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a> | {% endfor %} <a href="javascript:filterByCategory('reset')">show all the posts &rarr;</a>     
+    </p>
+  </div>
+
+  <nav id="post-archive-list">
+    <ul>
+      {% for post in site.posts %}        
+        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a class="title" href="{{ post.url }}">{{ post.title }}</a>
+      {% endfor %}
+    </ul>
+  <nav>
+  
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  window.onload=initArchive();
+</script>
+
+

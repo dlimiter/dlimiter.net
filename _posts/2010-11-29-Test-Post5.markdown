@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hello World 5
+title:  The Design Cubicle
 description: Hello world test post
 keywords: foo, bar
 categories: 

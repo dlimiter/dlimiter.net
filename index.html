@@ -1,19 +1,38 @@
 ---
 layout:   default
-title:    Blog 
+title:    Home 
 ---
+<div id="hello-world" class="span-12 last">
+  <p>
+    Hello! I'm a Melbourne based web & software developer with a passion for illustration & design. 
+  </p>
+  <p>
+    This is my personal website & blog.
+  </p>  
+</div>
+    
+<div id="recent-posts" class="span-8">
+  <div class="heading">
+    <h2>From the blog</h2>
+  </div>
 
-<p>
-Thoughts, interests, inspirations, tips and unsolicited opinions of a coder and designer.
-</p>
+  <ul>
+    {% for post in site.posts limit:1%}
+    <li>
+      {% include post_excerpt.html %}
+    </li>
+    {% endfor %}
+  </ul>
+  For older posts see <a href="{{ site.url }}/archive/">the archive &rarr;</a>
+  
+</div>
 
+<div class="span-4 last">
+  <div class="heading">
+    <h2>From twitter</h2>
+  </div>
+  
+  Twitter posts
+</div>
+  
 
-<ul class="recent-posts">
-  {% for post in site.posts limit:3%}
-  <li>
-    {% include post_excerpt.html %}
-  </li>
-  {% endfor %}
-</ul>
-
-<a href="{{ site.url }}/archive/">Read more in the archive &rarr;</a>

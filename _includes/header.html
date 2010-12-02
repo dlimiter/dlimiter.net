@@ -1,17 +1,19 @@
 <header>
-  <div class="container">
-    <h1>Dave Lim</h1>
-  </div>
-    
-  <nav id="main">
-    <div class="container">
-      <ul id="mainnav">
-        <li><a href="{{ site.url }}/">Blog</a></li>
-        <li><a href="{{ site.url }}/archive/">Archive</a></li>
-        <!-- TODO <li><a href="#">Folio</a></li> -->
-        <li><a href="{{ site.url }}/about/">About</a></li>
-        <li><a href="{{ site.url }}/contact/">Contact</a></li>
-      </ul>
+  <div id="my-name-is" class="container">
+    <div class="span-4">
+      <h1>Dave Lim</h1>
     </div>
-  </nav>
+    
+    <nav id="main">
+      <div id="mainnav" class="span-8 last">
+        <ul>
+          <li><a href="{{ site.url }}/contact/"><span class="nav-main">Contact</span><span class="nav-subscript">Connect with me</span></a></li>
+        
+          <li><a href="{{ site.url }}/about/"><span class="nav-main">About</span><span class="nav-subscript">Me me me me</span></a></li>
+          <li><a href="{{ site.url }}/blog/"><span class="nav-main">Writing</span><span class="nav-subscript">My Blog Posts</span></a></li>
+          <li><a href="{{ site.url }}/"><span class="nav-main">Home</span><span class="nav-subscript">Is where I live</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>

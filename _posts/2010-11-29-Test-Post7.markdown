@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hello World 7
+title:  Hello World 7 More Text to Simulate a Longer Title
 description: Hello world test post
 keywords: foo, bar
 categories: 
