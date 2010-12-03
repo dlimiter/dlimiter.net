@@ -7,7 +7,7 @@
     </p>
     {% else %}
     <p>
-      Filed under {% for category in post.categories %}<a href="/blog/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %} on {{ post.date | date: "%d %b, %Y" }}
+      Filed under {% for category in post.categories %}<a href="/blog.html?cat=cat-{{ category }}">{{ category }}</a> {% endfor %} on {{ post.date | date: "%d %b, %Y" }}
     </p>        
     {% endif %}    
   </div>

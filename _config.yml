@@ -1,14 +1,15 @@
-permalink:    pretty
+permalink:    /:year/:month/:day/:title
 analytics_id: UA-19957147-1
 title:        Dave Lim
 description:  Personal website of Dave Lim
-url:          http://dlimiter.net
+#url:          http://dlimiter.net
 #url:          http://dl.dropbox.com/u/4311778/dlimiter.net
-#url:          http://0.0.0.0:4000
+url:          http://0.0.0.0:4000
 author:       Dave Lim
 email:        dave@dlimiter.net
 twitter:      http://twitter.com/dlimiter
-github:       https://github.com/dlimiter
+github:       http://github.com/dlimiter
 linkedin:     http://au.linkedin.com/in/dlimiter
 keywords:     design,development,software,illustration,css,html,ruby,rails,blog
 comments:     true
+feed:         http://feeds.feedburner.com/dlimiterdotnet

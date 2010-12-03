@@ -239,7 +239,9 @@ nav#post-archive-list a.title {
 }
 
 .heading h2 {
+  font-weight:bold;
   font-size:0.9em;
+  text-align:right;
 }
 
 /*.heading h3 {
