@@ -7,7 +7,7 @@ layout: default
   <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
   <div class="post byline">
     <p>
-      Filed under {% for category in page.categories %}<a href="{{ site.url }}/archive/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %} on {{ page.date | date: "%d %b, %Y" }}
+      Filed under {% for category in page.categories %}<a href="/blog/?cat=cat-{{ category }}">{{ category }}</a> {% endfor %} on {{ page.date | date: "%d %b, %Y" }}
     </p>
   </div>
   <div class="post content">
@@ -29,7 +29,7 @@ layout: default
     var disqus_identifier = '{{ page.url }}';
     var disqus_url = '{{ page.url }}';
     /** Variable to allow local testing - remove for live deployment **/
-    var disqus_developer = 1;
+    // var disqus_developer = 1;
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';

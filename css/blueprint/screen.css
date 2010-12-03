@@ -104,35 +104,35 @@ form.inline p {margin-bottom:0;}
 .info a {color:#205791;}
 
 /* grid.css */
-.container {width:710px;margin:0 auto;}
+.container {width:700px;margin:0 auto;}
 .showgrid {background:url(src/grid.png);}
-.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12 {float:left;margin-right:10px;}
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12 {float:left;margin-right:20px;}
 .last {margin-right:0;}
-.span-1 {width:50px;}
-.span-2 {width:110px;}
-.span-3 {width:170px;}
-.span-4 {width:230px;}
-.span-5 {width:290px;}
-.span-6 {width:350px;}
-.span-7 {width:410px;}
-.span-8 {width:470px;}
-.span-9 {width:530px;}
-.span-10 {width:590px;}
-.span-11 {width:650px;}
-.span-12 {width:710px;margin-right:0;}
+.span-1 {width:40px;}
+.span-2 {width:100px;}
+.span-3 {width:160px;}
+.span-4 {width:220px;}
+.span-5 {width:280px;}
+.span-6 {width:340px;}
+.span-7 {width:400px;}
+.span-8 {width:460px;}
+.span-9 {width:520px;}
+.span-10 {width:580px;}
+.span-11 {width:640px;}
+.span-12 {width:700px;margin-right:0;}
 input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12 {border-left-width:1px;border-right-width:1px;padding-left:5px;padding-right:5px;}
-input.span-1, textarea.span-1 {width:38px;}
-input.span-2, textarea.span-2 {width:98px;}
-input.span-3, textarea.span-3 {width:158px;}
-input.span-4, textarea.span-4 {width:218px;}
-input.span-5, textarea.span-5 {width:278px;}
-input.span-6, textarea.span-6 {width:338px;}
-input.span-7, textarea.span-7 {width:398px;}
-input.span-8, textarea.span-8 {width:458px;}
-input.span-9, textarea.span-9 {width:518px;}
-input.span-10, textarea.span-10 {width:578px;}
-input.span-11, textarea.span-11 {width:638px;}
-input.span-12, textarea.span-12 {width:698px;}
+input.span-1, textarea.span-1 {width:28px;}
+input.span-2, textarea.span-2 {width:88px;}
+input.span-3, textarea.span-3 {width:148px;}
+input.span-4, textarea.span-4 {width:208px;}
+input.span-5, textarea.span-5 {width:268px;}
+input.span-6, textarea.span-6 {width:328px;}
+input.span-7, textarea.span-7 {width:388px;}
+input.span-8, textarea.span-8 {width:448px;}
+input.span-9, textarea.span-9 {width:508px;}
+input.span-10, textarea.span-10 {width:568px;}
+input.span-11, textarea.span-11 {width:628px;}
+input.span-12, textarea.span-12 {width:688px;}
 .append-1 {padding-right:60px;}
 .append-2 {padding-right:120px;}
 .append-3 {padding-right:180px;}
@@ -155,8 +155,8 @@ input.span-12, textarea.span-12 {width:698px;}
 .prepend-9 {padding-left:540px;}
 .prepend-10 {padding-left:600px;}
 .prepend-11 {padding-left:660px;}
-.border {padding-right:4px;margin-right:5px;border-right:1px solid #ddd;}
-.colborder {padding-right:34px;margin-right:35px;border-right:1px solid #ddd;}
+.border {padding-right:9px;margin-right:10px;border-right:1px solid #ddd;}
+.colborder {padding-right:39px;margin-right:40px;border-right:1px solid #ddd;}
 .pull-1 {margin-left:-60px;}
 .pull-2 {margin-left:-120px;}
 .pull-3 {margin-left:-180px;}

@@ -2,10 +2,64 @@
 layout:   default
 title:    Contact 
 ---
+  
+<div class="lead-in  block-text span-12 last">
+  <p>
+  There are a bunch of ways that you can connect with me - pick your flavour:
+  </p>
+</div>
 
-Email
+<div class="span-3">
+  <a href="mailto:{{ site.email }}">
+    <div id="circle-1" class="circle">
+      <h1>Email</h1>
+    </div>
+  </a>
+  <div class="contact-details block-text">    
+    <p>
+      Probably the easiest & quickest way to get in touch is to <a href="mailto:{{ site.email }}">
+      drop me an email<a>.
+    </p>  
+  </div>
+</div>  
 
-Twitter
-Linkedin
-Github
+<div class="span-3">
+  <a href="{{ site.twitter }}">
+    <div id="circle-2" class="circle">
+      <h1>Twitter</h1>
+    </div>
+  </a>
+  <div class="contact-details block-text">    
+    <p>
+      I tweet on & off with links & opinion. <a href="{{ site.twitter }}">Follow me</a> if you're into that sort of thing.
+    </p>  
+  </div>
+</div>
+
+<div class="span-3">
+  <a href="{{ site.linkedin }}">
+    <div id="circle-3" class="circle">
+      <h1>Linkedin</h1>
+    </div>
+  </a>
+  <div class="contact-details block-text">      
+    <p>
+      I have a professional profile on <a href="{{ site.linkedin }}">Linkedin</a>. I even update it from time to time.
+    </p>
+  </div>
+</div>
+
+<div class="span-3 last">
+  <a href="{{ site.github }}"></a>
+    <div id="circle-4" class="circle">
+      <h1>Github</h1>
+    </div>
+  </a>
+  <div class="contact-details block-text">      
+    <p>
+      I host code & personal projects (including all the source & content of this blog) at Github. <a href="{{ site.github }}">Fork me!</a>
+    </p>
+  </div>
+</div>
+
 
