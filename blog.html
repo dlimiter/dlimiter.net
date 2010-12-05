@@ -19,8 +19,8 @@ title:    Blog
   {% else %}
     <div class="span-6 last">  
   {% endif %}
-    {% include post_excerpt.html %}    
-  </div>
+  {% include post_excerpt.html %}    
+    </div>
   {% endfor %}
 </div>
 
@@ -29,12 +29,9 @@ title:    Blog
 </div>
 <div class="span-12 last">
   <p>
-    Below is a complete listing of all my published blog posts. 
+    Below is a complete listing of all my published posts. If it's a bit much you can filter the list of posts by selecting one of the following categories:
   </p>
   <div id="post-archive-category-list">
-    <p>    
-      You can filter the list of posts by selecting one of the following categories: 
-    </p>
     <p>
       {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a> | {% endfor %} <a href="javascript:filterByCategory('reset')">show all the posts &rarr;</a>     
     </p>
@@ -43,14 +40,14 @@ title:    Blog
   <nav id="post-archive-list">
     <ul>
       {% for post in site.posts %}        
-        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a class="title" href="{{ post.url }}">{{ post.title }}</a>
+        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a class="title" href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
-  <nav>
+  </nav>
   
 </div>
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
   window.onload=initArchive();
 </script>
 

@@ -123,8 +123,8 @@ span.nav-main {
   text-transform: uppercase;
   font-weight: bold;
   font-size:0.8em;
+/*  color:#5f8dd3;*/
 }
-
 
 nav#main a {
   display:block;
@@ -231,16 +231,19 @@ nav#post-archive-list a.title {
   padding-left:10px;  
   font-size:1em;
 }
+
 .heading {
   text-transform: uppercase;
   font-weight:bold;
   border-bottom: 1px solid #666;
   padding:0;
+  
 }
-
 .heading h2 {
   font-weight:bold;
   font-size:0.9em;
+}
+#content .heading h2 {
   text-align:right;
 }
 
@@ -337,14 +340,26 @@ img.profile-image {
   padding: 10px 0 10px 10px;
   float:right;
 }
+
 footer li, #colophon li {
   border-bottom: 1px dotted #666;
   width:100%;
+}
+
+footer li {
   padding:5px 0;
+}
+
+#colophon li {
+  padding:10px 0;
 }
 
 footer li.last, #colophon li.last {
   border-bottom: none;
+}
+
+footer .heading h2 {
+  text-align: left;
 }
 
 /* 
