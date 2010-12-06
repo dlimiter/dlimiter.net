@@ -13,3 +13,4 @@ linkedin:     http://au.linkedin.com/in/dlimiter
 keywords:     design,development,software,illustration,css,html,ruby,rails,blog
 comments:     true
 feed:         http://feeds.feedburner.com/dlimiterdotnet
+ignore:       _blog

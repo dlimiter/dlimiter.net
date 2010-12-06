@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        Some Neat Color Tools for Web Designers & Developers
+title:        A Couple of Nifty Color Tools for Web Designers & Developers
 description: 
 categories:     
 - design
@@ -8,7 +8,7 @@ categories:
 - color
 ---
 
-Having just gone through the design and development process for this site, I thought I'd share a couple of nifty free color related web applications I've been using. 
+Having just gone through the design and development process for this site, I thought I'd share a couple of nifty free color related web applications I've been playing around with. 
 
 ### [Kuler][1]
 
