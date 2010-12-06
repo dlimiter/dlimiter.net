@@ -179,6 +179,8 @@ div#hello-world {
 
 .post.content {
   border-top: 1px dotted #999;
+  border-bottom: 1px dotted #999;
+  
 }
 
 .block-text, .post.content {

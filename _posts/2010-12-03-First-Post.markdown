@@ -2,7 +2,7 @@
 layout:       post
 title:        First Post!
 description: 
-category:     Admin
+category:     admin
 ---
 
 Hello? Hello? Is this thing on? 

@@ -16,7 +16,7 @@ function initArchive() {
     queryObj[name] = value;
   }
   category = queryObj[ "cat" ];
-  if ( category == undefined || category.length > 0 ) {
+  if ( category != undefined || category.length > 0 ) {
         filterByCategory(category);      
   }
 }
@@ -31,6 +31,8 @@ function filterByCategory(className) {
     $("nav#post-archive-list li:not(."+className+")").slideUp("fast");
     $("#post-archive-category-list a."+className).addClass("selected");
   }  
+  //
+  window.location.hash="archive";
 }
 
 function toggleComments() {
