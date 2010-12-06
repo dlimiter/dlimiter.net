@@ -1,11 +1,10 @@
 ---
 layout:       post
-title:        A Couple of Nifty Color Tools for Web Designers & Developers
+title:        A Couple of Nifty Color Tools for Web Designers &amp; Developers
 description: 
 categories:     
 - design
 - developer
-- color
 ---
 
 Having just gone through the design and development process for this site, I thought I'd share a couple of nifty free color related web applications I've been playing around with. 
@@ -34,5 +33,5 @@ I hope these are of some use to people. If you have any favourites or suggestion
 [4]:http://gimp.org/
 [5]:http://inkscape.org/
 
-[10]:/img/posts/kuler_screenshot.jpg
-[11]:/img/posts/0to255_screenshot.jpg
+[10]:{{ site.url }}/img/posts/kuler_screenshot.jpg
+[11]:{{ site.url }}/img/posts/0to255_screenshot.jpg

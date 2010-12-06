@@ -38,7 +38,11 @@ h3 {
 }
 
 h2, h3 {
-  margin: 0.5em 0 0.1em 0;
+  margin: 0.5em 0 0.3em 0;
+}
+
+h3 {
+  line-height:1.2em;
 }
 
 p {
@@ -260,6 +264,12 @@ nav#post-archive-list a.title {
 
 #archive-pointer {
   text-align:right;
+}
+
+pre {
+  padding-top:10px;
+  padding-bottom:10px;  
+  border: 1px dotted #999;
 }
 
 /* 
