@@ -80,5 +80,4 @@ If you're interested in more complex effects, have a look at the detailed specif
 [7]:http://msdn.microsoft.com/en-us/library/ms532997(VS.85).aspx
 
 [10]:{{ site.url }}/img/posts/westciv_screenshot.jpg
-[10]:/img/posts/westciv_screenshot.jpg
-[11]:/img/posts/example_gradient.jpg
+[11]:{{ site.url }}/img/posts/example_gradient.jpg
