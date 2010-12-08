@@ -25,7 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family:"Helvetica Neue", Helvetica, Arial,sans-serif;  
+  font-family: "Droid Sans", Arial, sans-serif;;
   color:#666;
 } 
 
@@ -79,7 +79,7 @@ nav li {
  * Header 
  */
 header {
-  font-family:"Helvetica Neue", Helvetica, Arial,sans-serif;  
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   background-color:#fff;
   border-top:5px solid #000;
 }
@@ -208,7 +208,7 @@ nav#post-archive-list {
 }
 
 nav#post-archive-list a.title {
-  font-family:"Helvetica Neue", Helvetica, Arial,sans-serif;  
+  font-family: "Droid Sans", Arial, sans-serif;;
   padding-left:10px;  
   font-size:1em;
 }
@@ -267,10 +267,37 @@ nav#post-archive-list a.title {
 }
 
 pre {
-  padding-top:10px;
-  padding-bottom:10px;  
+  margin:5px 0;
   border: 1px dotted #999;
+  overflow:auto;
 }
+
+code {
+  font-size:0.8em;
+}
+
+.post.content h3, .post.content h4 { 
+  margin:1em 0;
+}
+
+.post.content h3 {
+  font-size:1.1em;
+  font-weight:bold;
+}
+
+.post.content h4 {
+  font-size:1em;
+  font-weight:bold;
+}
+
+.post.content ul {
+  list-style-type:disc;
+  margin:0 1.5em 1.5em 0;
+  padding-left:1.5em;
+  
+}
+
+
 
 /* 
  * Footer 
