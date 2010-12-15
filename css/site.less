@@ -1,0 +1,386 @@
+---
+
+---
+/*
+ * Colors
+ */
+
+@base-link-blue: #5f8dd3;
+@base-text-grey: #666;
+@sub-text-grey: #999;
+ 
+/* 
+ * Global 
+ */
+:focus {
+  outline:1px dotted @base-text-grey;
+}
+ 
+html, footer {
+  background-image: url("../img/333.jpg");
+  background-repeat: repeat;
+} 
+
+ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-size: 90%;
+  color: @base-text-grey;
+  font-family: "Droid Serif", serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Droid Sans", Arial, sans-serif;
+  color:@base-text-grey;
+} 
+
+h2 {
+  font-size:1.5em
+}
+  
+h3 {
+  font-size:1.2em;
+}
+
+h2, h3 {
+  margin: 0.5em 0 0.3em 0;
+}
+
+h3 {
+  line-height:1.2em;
+}
+
+p {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.container {
+  margin:0 auto;
+} 
+
+.lead-in {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:active  {
+  color:@base-link-blue;
+}
+
+a:hover {
+  border-bottom: 1px dotted @base-link-blue;
+}
+
+nav li {
+  display: block;
+  margin:0;
+  padding:0;
+}
+
+/* 
+ * Header 
+ */
+header {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color:#fff;
+  border-top:5px solid #000;
+}
+
+header #my-name-is {
+  height:200px;
+  background-image: url("../img/blue_circle.jpg");
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  padding-top:5px;
+  font-size:5em;
+  width:100px;
+  font-weight:bold;
+  color:#fff;
+  line-height:0.9;  
+}
+
+nav#main li {
+  float:right;
+}
+
+span.nav-subscript {
+  font-size:0.7em;
+  font-style: italic;
+  display:block;
+  color: @sub-text-grey;
+}
+
+span.nav-main {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:0.8em;
+}
+
+nav#main a {
+  display:block;
+  padding:10px;
+  border-left :1px solid @base-text-grey;  
+  text-align: center;
+  margin: 10px 0;
+}
+
+nav#main ul {
+  margin:0;
+  padding:0;
+}
+nav#main a:link, nav#main a:visited, nav#main a:active  {
+  color:@base-text-grey;  
+}
+
+nav#main a:hover {
+  border-bottom: 0;
+  color: @base-link-blue;
+}
+
+/* 
+ * Content 
+ */
+#content {
+  padding:10px 0;
+}
+
+#recent-posts ul {
+  margin:0;
+  padding:0;
+}
+
+#hello-world p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size:2.5em;
+  line-height:1.2;
+}
+
+#hello-world {
+  margin-bottom:20px;
+}
+
+.post.content {
+  border-top: 1px dotted @sub-text-grey;
+  border-bottom: 1px dotted @sub-text-grey;
+  
+}
+
+.block-text, .post.content {
+  text-align: justify;
+}
+
+.post.byline p {
+  font-size:0.9em;
+  color:@sub-text-grey;
+}
+
+.post.excerpt.read-more p, p a#comment-toggle {
+  font-size:0.9em;
+  text-align: right;
+}
+#post-archive-category-list {
+  border-top:1px dotted @base-text-grey;
+  border-bottom:1px dotted @base-text-grey;
+  padding:10px;
+}
+
+#post-archive-category-list p{
+  text-align: center;
+}
+
+#post-archive-category-list a {
+ margin: 5px;
+ padding: 5px; 
+}
+
+
+#post-archive-category-list a.selected {
+  background-color:#ddd;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+nav#post-archive-list {
+  margin-top:10px;
+}
+
+nav#post-archive-list a.title {
+  font-family: "Droid Sans", Arial, sans-serif;
+  padding-left:10px;  
+  font-size:1em;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight:bold;
+  border-bottom: 1px solid @base-text-grey;
+  padding:0;
+  
+}
+.heading h2 {
+  font-weight:bold;
+  font-size:0.9em;
+}
+#content .heading h2 {
+  text-align:right;
+}
+
+#circle-1 {
+  background-image: url("../img/small_circle_1.jpg");
+}
+
+#circle-2 {
+  background-image: url("../img/small_circle_2.jpg");
+}
+
+#circle-3 {
+  background-image: url("../img/small_circle_3.jpg");
+}
+
+#circle-4 {
+  background-image: url("../img/small_circle_4.jpg");
+}
+
+#circle-5 {
+  background-image: url("../img/small_circle_5.jpg");
+}
+
+.circle {
+  background-repeat: no-repeat;  
+  background-position: center;
+  height:62px;
+  padding-top:38px;
+  padding-left:28px;
+}
+
+.circle h1 {
+  font-size:1.5em;
+  color:#fff;
+  font-weight:bold;
+}
+
+#archive-pointer {
+  text-align:right;
+}
+
+pre {
+  margin:5px 0;
+  border: 1px dotted @sub-text-grey;
+  overflow:auto;
+}
+
+code {
+  font-size:0.8em;
+}
+
+.post.content h3, .post.content h4 { 
+  margin:1em 0;
+}
+
+.post.content h3 {
+  font-size:1.1em;
+  font-weight:bold;
+}
+
+.post.content h4 {
+  font-size:1em;
+  font-weight:bold;
+}
+
+.post.content ul {
+  list-style-type:disc;
+  margin:0 1.5em 1.5em 0;
+  padding-left:1.5em;
+  
+}
+
+blockquote {
+  color:@sub-text-grey;
+  font-size:0.8em;
+  border-left: 1px solid @sub-text-grey;
+  padding-left: 10px;
+  
+}
+
+img.bordered {
+  border:2px @sub-text-grey solid;
+}
+
+/* 
+ * Footer 
+ */ 
+footer {
+  color:#ccc;
+  margin:0;
+  padding:10px 0 5px 0;
+  font-family: "Droid Sans", Arial, sans-serif;
+  font-size:0.9em;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5  {
+  color:#ccc;
+  text-transform: uppercase;
+}
+
+footer a:link, footer a:visited, footer a:active  {
+  color:@base-link-blue;
+}
+
+footer a:hover {
+  border-bottom: none;
+  color:#fff;
+}
+
+footer #copyright {
+  font-size:75%;
+  width:100%;
+  padding-top:5px;
+  margin:0;
+  border-top: 1px solid @base-text-grey;
+  text-align: right;
+}
+
+img.profile-image {
+  padding: 10px 0 10px 10px;
+  float:right;
+}
+
+footer li, #colophon li {
+  border-bottom: 1px dotted @base-text-grey;
+  width:100%;
+}
+
+footer li {
+  padding:5px 0;
+}
+
+#colophon li {
+  padding:10px 0;
+}
+
+footer li.last, #colophon li.last {
+  border-bottom: none;
+}
+
+footer .heading h2 {
+  text-align: left;
+}
+
+/* 
+ * Comments
+ */
+#comments {
+  display:none;
+}
