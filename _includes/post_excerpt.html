@@ -6,11 +6,11 @@
     </p>
   </div>
   <div class="post excerpt content">
-      {{ post.content | truncatewords: 22, "..." }}
-  </div>
-  <div class="post excerpt read-more">
-    <p>
-      <a href="{{ post.url }}">read more &rarr;</a>
-    </p>
+      {{ post.content | truncatewords: 30, "..." }}
+      <div class="post excerpt read-more">
+        <p>
+          <a href="{{ post.url }}">read more &rarr;</a>
+        </p>
+      </div>
   </div>
 </article>

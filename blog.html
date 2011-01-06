@@ -9,11 +9,11 @@ title:    Blog
 </div>
 
 <div class="heading">
-  <h2>Latest Posts</h2>
+  <h2>The Latest</h2>
 </div>
 
 <div id="recent-posts">
-  {% for post in site.posts limit:2%}
+  <!-- {% for post in site.posts limit:2%}
   {% if post == site.posts.first %}
     <div class="span-6">
   {% else %}
@@ -21,11 +21,17 @@ title:    Blog
   {% endif %}
   {% include post_excerpt.html %}    
     </div>
+  {% endfor %} -->
+  <div class="span-12 last">  
+  {% for post in site.posts limit:1 %}
+    {% include post_excerpt.html %}    
   {% endfor %}
+  </div>
+  
 </div>
 
 <div class="heading span-12 last">
-  <h2 id="archive">Archive</h2>
+  <h2 id="archive">The Archive</h2>
 </div>
 <div class="span-12 last">
   <p>
