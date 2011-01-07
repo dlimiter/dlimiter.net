@@ -9,5 +9,5 @@ task :server do
 end
 
 task :deploy => [:generate] do
-    sh "rsync -av --rsh='ssh -p 2683' _site/ dlimiter@crimsoncactus.net:public_html/"
+    sh "rsync -av --rsh='ssh -p 2683' _site/ dlimiter@dlimiter.net:public_html/"
 end
