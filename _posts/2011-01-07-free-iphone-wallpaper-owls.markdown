@@ -7,7 +7,7 @@ categories:
 - illustration
 ---
 
-These two wallpapers were some of the first things I drew when I was [experimenting with my new Wacom tablet][1] and Inkscape. Nothing too flash, but I thought I'd offer them up for anyone who was interested. 
+These two wallpapers of [day owl][3] and [night owl][4] were some of the first things I drew when I was [experimenting with my new Wacom tablet][1] and Inkscape. Nothing too flash, but I thought I'd offer them up for anyone who was interested. 
 
 <img alt="day-owl" src="{{site.url}}/img/posts/day-owl.png" width="320" height="480" style="padding:10px;" />
 <img alt="night-owl" src="{{ site.url }}/img/posts/night-owl.png" width="320" height="480" style="padding:10px;"/>
@@ -18,3 +18,5 @@ These <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmit
 
 [1]:{{site.url}}/2011/01/06/wacom-tablet-with-inkscape-gimp-on-osx/
 [2]:{{site.url}}/downloads/iphone-wallpapers-owls.zip
+[3]:{{site.url}}/img/posts/day-owl.png
+[4]:{{site.url}}/img/posts/night-owl.png
