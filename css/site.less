@@ -85,13 +85,15 @@ header {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   background-color:#fff;
   border-top:5px solid #000;  
+  border-bottom:1px solid @base-text-grey;  
 }
 
 header h1 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size:3.5em;
-  margin: 12px 0;
+  margin: 0;
   color: @very-light-grey;
+  letter-spacing:1px;
 }
 
 header h1 span.surname {
@@ -106,11 +108,11 @@ span.nav-subscript {
   font-size:0.7em;
   font-style: italic;
   display:block;
-  color: @light-grey;
+  color: @sub-text-grey;
 }
 
 span.nav-main {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-size:0.8em;
 }
@@ -118,9 +120,8 @@ span.nav-main {
 nav#main a {
   display:block;
   padding:10px;
-  border-left :1px solid @light-grey;  
+  border-left :1px solid @base-text-grey;  
   text-align: center;
-  margin: 10px 0;
 }
 
 
@@ -292,17 +293,19 @@ img.post-float-right {
  * Footer 
  */ 
 footer {
-  color:#ccc;
+  color:@sub-text-grey;
   margin:0;
   padding:10px 0 5px 0;
-  font-family: "Droid Sans", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size:0.9em;
+  border-top:1px solid @base-text-grey;  
+  
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5  {
-  color: @light-grey;
+  color:@sub-text-grey;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 footer a:link, footer a:visited, footer a:active  {
@@ -319,7 +322,7 @@ footer #copyright {
   width:100%;
   padding-top:5px;
   margin:0;
-  border-top: 1px solid @light-grey;
+  border-top: 1px solid @base-text-grey;
   text-align: right;
 }
 
@@ -334,12 +337,16 @@ img.profile-image {
 }
 
 footer li {
-  border-bottom: 1px dotted @light-grey;
+  border-bottom: 1px dotted @base-text-grey;
   width:100%;
+  padding: 5px 0;
+}
+
+footer ul {
+  margin: 0.5em 0;
 }
 
 footer li {
-  padding:5px 0;
 }
 
 #colophon li , .contact-item, .contact-item-last {
@@ -356,7 +363,7 @@ footer .heading h2 {
 }
 
 footer .heading {
-  border-bottom: 1px solid @light-grey;
+  border-bottom: none;
 }
 
 /* 
