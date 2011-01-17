@@ -8,6 +8,8 @@
 @base-link-blue: #5f8dd3;
 @base-text-grey: #666;
 @sub-text-grey: #999;
+@light-grey: #ccc;
+@very-light-grey: #eee;
  
 /* 
  * Global 
@@ -16,7 +18,7 @@
   outline:1px dotted @base-text-grey;
 }
  
-html, footer {
+html, footer, header {
   background-image: url("../img/333.jpg");
   background-repeat: repeat;
 } 
@@ -27,16 +29,11 @@ ul {
   margin:0;
 }
 
-body {
+body, h1, h2, h3, h4, h5 {
   font-size: 90%;
   color: @base-text-grey;
-  font-family: "Droid Serif", serif;
-}
-
-h1, h2, h3, h4, h5 {
   font-family: "Droid Sans", Arial, sans-serif;
-  color:@base-text-grey;
-} 
+}
 
 h2 {
   font-size:1.5em
@@ -44,14 +41,11 @@ h2 {
   
 h3 {
   font-size:1.2em;
+  line-height:1.2em;
 }
 
 h2, h3 {
   margin: 0.5em 0 0.3em 0;
-}
-
-h3 {
-  line-height:1.2em;
 }
 
 p {
@@ -90,22 +84,18 @@ nav li {
 header {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   background-color:#fff;
-  border-top:5px solid #000;
-}
-
-header #my-name-is {
-  height:200px;
-  background-image: url("../img/blue_circle.jpg");
-  background-repeat: no-repeat;
+  border-top:5px solid #000;  
 }
 
 header h1 {
-  padding-top:5px;
-  font-size:5em;
-  width:100px;
-  font-weight:bold;
-  color:#fff;
-  line-height:0.9;  
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size:3.5em;
+  margin: 12px 0;
+  color: @very-light-grey;
+}
+
+header h1 span.surname {
+  color:@sub-text-grey;  
 }
 
 nav#main li {
@@ -116,30 +106,26 @@ span.nav-subscript {
   font-size:0.7em;
   font-style: italic;
   display:block;
-  color: @sub-text-grey;
+  color: @light-grey;
 }
 
 span.nav-main {
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: bold;
   font-size:0.8em;
 }
 
 nav#main a {
   display:block;
   padding:10px;
-  border-left :1px solid @base-text-grey;  
+  border-left :1px solid @light-grey;  
   text-align: center;
   margin: 10px 0;
 }
 
-nav#main ul {
-  margin:0;
-  padding:0;
-}
+
 nav#main a:link, nav#main a:visited, nav#main a:active  {
-  color:@base-text-grey;  
+  color:@light-grey;  
 }
 
 nav#main a:hover {
@@ -152,11 +138,6 @@ nav#main a:hover {
  */
 #content {
   padding:10px 0;
-}
-
-#recent-posts ul {
-  margin:0;
-  padding:0;
 }
 
 #hello-world p{
@@ -216,7 +197,6 @@ nav#main a:hover {
  padding: 5px; 
 }
 
-
 #post-archive-category-list a.selected {
   background-color:#ddd;
   -webkit-border-radius: 10px;
@@ -241,26 +221,14 @@ nav#post-archive-list a.title {
   padding:0;
   
 }
+
 .heading h2 {
   font-weight:bold;
   font-size:0.9em;
 }
+
 #content .heading h2 {
   text-align:right;
-}
-
-.circle {
-  background-repeat: no-repeat;  
-  background-position: center;
-  height:62px;
-  padding-top:38px;
-  padding-left:28px;
-}
-
-.circle h1 {
-  font-size:1.5em;
-  color:#fff;
-  font-weight:bold;
 }
 
 #archive-pointer {
@@ -302,8 +270,7 @@ blockquote {
   color:@sub-text-grey;
   font-size:0.8em;
   border-left: 1px solid @sub-text-grey;
-  padding-left: 10px;
-  
+  padding-left: 10px;  
 }
 
 img.bordered {
@@ -333,8 +300,9 @@ footer {
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5  {
-  color:#ccc;
+  color: @light-grey;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 footer a:link, footer a:visited, footer a:active  {
@@ -351,7 +319,7 @@ footer #copyright {
   width:100%;
   padding-top:5px;
   margin:0;
-  border-top: 1px solid @base-text-grey;
+  border-top: 1px solid @light-grey;
   text-align: right;
 }
 
@@ -360,8 +328,13 @@ img.profile-image {
   float:right;
 }
 
-footer li, #colophon li, .contact-item {
+#colophon li, .contact-item {
   border-bottom: 1px dotted @base-text-grey;
+  width:100%;
+}
+
+footer li {
+  border-bottom: 1px dotted @light-grey;
   width:100%;
 }
 
@@ -379,6 +352,11 @@ footer li.last, #colophon li.last {
 
 footer .heading h2 {
   text-align: left;
+  font-weight: normal;
+}
+
+footer .heading {
+  border-bottom: 1px solid @light-grey;
 }
 
 /* 
