@@ -7,10 +7,10 @@
     <nav id="main">
       <div id="mainnav" class="span-7 last">
         <ul>
-          <li><a href="/contact.html"><span class="nav-main">Contact</span><span class="nav-subscript">Connect with me</span></a></li>
-          <li><a href="/about.html"><span class="nav-main">About</span><span class="nav-subscript">More about me</span></a></li>
-          <li><a href="/blog.html"><span class="nav-main">Writing</span><span class="nav-subscript">My blog</span></a></li>
-          <li><a class="first" href="/"><span class="nav-main">Home</span><span class="nav-subscript">Where I live</span></a></li>
+          <li><a href="/contact.html" {% if page.title == 'Contact' %}class="selected"{% endif %}><span class="nav-main">Contact</span><span class="nav-subscript">Connect with me</span></a></li>
+          <li><a href="/about.html" {% if page.title == 'About' %}class="selected"{% endif %}><span class="nav-main">About</span><span class="nav-subscript">More about me</span></a></li>
+          <li><a href="/blog.html" {% if page.title =='Blog' %}class="selected"{% endif %}><span class="nav-main">Writing</span><span class="nav-subscript">Blog archive</span></a></li>
+          <li><a class="first {% if page.title == 'Home'%} selected {% endif %}" href="/"><span class="nav-main">Home</span><span class="nav-subscript">Where I live</span></a></li>
         </ul>
       </div>
     </nav>

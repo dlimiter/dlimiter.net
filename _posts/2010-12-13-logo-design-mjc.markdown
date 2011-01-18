@@ -22,7 +22,7 @@ The brief included the following direction:
 > The concept/idea is more important than the quality of the drawing. We can get a graphic designer to touch up your design  if required, ie. you need a good idea more than good drawing skills!
 > The new MJC logo needs to reflect the vision of the conventionʼs future. Some things to consider are: the community, the people, circus culture, performance, workshops (learning and teaching), environmental awareness, friendly & inviting, everybody is welcome.
 
-### Reasearch
+### Research
 
 As a juggler I already had a fair amount of domain knowledge about props, disciplines, terminology etc., so for my research I had a look around at other juggling related logos and designs. The spectrum of examples I found was incredibly broad with varying levels of detail, complexity and finish, but it gave me a good general feel for the problem space.
 

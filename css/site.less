@@ -32,7 +32,20 @@ ul {
 body, h1, h2, h3, h4, h5 {
   font-size: 90%;
   color: @base-text-grey;
-  font-family: "Droid Sans", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;    
+}
+
+body {
+  text-shadow: #fff 0px -1px 1px; 
+  background-color:@very-light-grey;
+}
+
+header li, header h1 {
+  text-shadow: none;
+}
+
+footer li, footer p, footer h2 {
+  text-shadow: #333 0px 1px 1px;  
 }
 
 h2 {
@@ -40,12 +53,12 @@ h2 {
 }
   
 h3 {
-  font-size:1.2em;
+  font-size:1.3em;
   line-height:1.2em;
 }
 
 h2, h3 {
-  margin: 0.5em 0 0.3em 0;
+  margin: 0.3em 0 0.3em 0;
 }
 
 p {
@@ -82,16 +95,14 @@ nav li {
  * Header 
  */
 header {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
   background-color:#fff;
   border-top:5px solid #000;  
   border-bottom:1px solid @base-text-grey;  
 }
 
 header h1 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size:3.5em;
-  margin: 0;
+  font-size:3em;
+  margin: 5px 0;
   color: @very-light-grey;
   letter-spacing:1px;
 }
@@ -134,33 +145,31 @@ nav#main a:hover {
   color: @base-link-blue;
 }
 
+nav#main a.selected {
+  color: @base-link-blue;
+}
+
 /* 
  * Content 
  */
+span.archive-listing-date {
+  width:90px;
+  float: left;
+}
+
 #content {
   padding:10px 0;
 }
 
-#hello-world p{
-  margin-bottom: 10px;
-  margin-top: 10px;
-  font-size:2.5em;
-  line-height:1.2em;
-}
-
-#hello-world {
-  margin-bottom:0px;
-}
-
 .post.content {
-  border-top: 1px dotted @sub-text-grey;
-  border-bottom: 1px dotted @sub-text-grey;    
+  border-top: 1px dotted @light-grey;
+  border-bottom: 1px dotted @light-grey;    
 }
 
 .post.content.excerpt {
   border-top:none;
   border-bottom:none;
-  border-top:1px dotted @base-text-grey;
+  border-top:1px dotted @light-grey;
 }
 
 .post.content.excerpt p{
@@ -184,9 +193,9 @@ nav#main a:hover {
   margin: 0;
 }
 #post-archive-category-list {
-  border-top:1px dotted @base-text-grey;
-  border-bottom:1px dotted @base-text-grey;
-  padding:10px;
+  border-top:1px dotted @light-grey;
+  border-bottom:1px dotted @light-grey;
+  padding:0px;
 }
 
 #post-archive-category-list p{
@@ -210,26 +219,20 @@ nav#post-archive-list {
 }
 
 nav#post-archive-list a.title {
-  font-family: "Droid Sans", Arial, sans-serif;
   padding-left:10px;  
   font-size:1em;
 }
 
 .heading {
   text-transform: uppercase;
-  font-weight:bold;
-  border-bottom: 1px solid @base-text-grey;
+/*  font-weight:bold;*/
   padding:0;
-  
+  letter-spacing:2px;
 }
 
 .heading h2 {
   font-weight:bold;
   font-size:0.9em;
-}
-
-#content .heading h2 {
-  text-align:right;
 }
 
 #archive-pointer {
@@ -248,23 +251,22 @@ code {
 
 .post.content h3, .post.content h4 { 
   margin:1em 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .post.content h3 {
-  font-size:1.1em;
-  font-weight:bold;
+  font-size:1em;
 }
 
 .post.content h4 {
-  font-size:1em;
-  font-weight:bold;
+  font-size:0.9em;
 }
 
 .post.content ul {
   list-style-type:disc;
   margin:0 1.5em 1.5em 0;
   padding-left:1.5em;
-  
 }
 
 blockquote {
@@ -278,7 +280,6 @@ img.bordered {
   border:2px @sub-text-grey solid;
 }
 
-
 img.post-float-left {
 	float:left;	
 	margin: 10px 10px 10px 0;	
@@ -289,6 +290,14 @@ img.post-float-right {
   margin: 10px 0 10px 10px;	
 }
 
+#colophon li, .contact-item {
+  border-bottom: 1px dotted @light-grey;
+  width:100%;
+}
+
+article.post.excerpt {
+  margin:1.2em 0;
+}
 /* 
  * Footer 
  */ 
@@ -296,10 +305,8 @@ footer {
   color:@sub-text-grey;
   margin:0;
   padding:10px 0 5px 0;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size:0.9em;
   border-top:1px solid @base-text-grey;  
-  
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5  {
@@ -320,8 +327,8 @@ footer a:hover {
 footer #copyright {
   font-size:75%;
   width:100%;
-  padding-top:5px;
-  margin:0;
+  padding-top:10px;
+  margin-top:10px;
   border-top: 1px solid @base-text-grey;
   text-align: right;
 }
@@ -329,11 +336,6 @@ footer #copyright {
 img.profile-image {
   padding: 10px 0 10px 10px;
   float:right;
-}
-
-#colophon li, .contact-item {
-  border-bottom: 1px dotted @base-text-grey;
-  width:100%;
 }
 
 footer li {
@@ -348,9 +350,12 @@ footer ul {
 
 footer li {
 }
+#colophon ul {
+  margin:0.5em 0;
+}
 
 #colophon li , .contact-item, .contact-item-last {
-  padding:10px 0;
+  padding:0.5em 0;
 }
 
 footer li.last, #colophon li.last {
@@ -358,12 +363,7 @@ footer li.last, #colophon li.last {
 }
 
 footer .heading h2 {
-  text-align: left;
   font-weight: normal;
-}
-
-footer .heading {
-  border-bottom: none;
 }
 
 /* 

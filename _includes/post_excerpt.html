@@ -1,12 +1,10 @@
 <article class="post excerpt">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
   <div class="post excerpt byline">
-    <p>
       Filed under {% for category in post.categories %}{% if category == post.categories.last and category != post.categories.first %} and {% elsif category != post.categories.first %}, {% endif %}{% if page.title == "Blog" %}<a href="javascript:filterByCategory('cat-{{ category }}')">{% else %}<a href="/blog.html?cat=cat-{{ category }}">{% endif %}{{ category }}</a>{% endfor %} on {{ post.date | date: "%d %b, %Y" }}  
-    </p>
   </div>
   <div class="post excerpt content">
-      {{ post.content | truncatewords: 30, "..." }}
+      {{ post.content | truncatewords: 35, "..." }}
       <div class="post excerpt read-more">
         <p>
           <a href="{{ post.url }}">read more &rarr;</a>

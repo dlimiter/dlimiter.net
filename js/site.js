@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  
 });
 
 function initArchive() {
@@ -16,7 +15,7 @@ function initArchive() {
     queryObj[name] = value;
   }
   category = queryObj[ "cat" ];
-  if ( category != undefined || category.length > 0 ) {
+  if ( category != undefined && category.length > 0 ) {
         filterByCategory(category);      
   }
 }

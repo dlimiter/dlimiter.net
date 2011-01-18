@@ -1,23 +1,21 @@
 ---
 layout:   default
 title:    Home 
----
-<div id="hello-world" class="span-12 last">
-  <p>
-    Hello! My name is Dave.
-  </p>
-  <p>
-    I'm a Melbourne based web & software developer with a passion for illustration & design. 
-  </p>
-</div>
-    
+--- 
 <div class="lead-in  block-text span-12 last">
   <p>
+    Hello! My name is Dave. I'm a Melbourne based web & software developer with a passion for illustration & design. 
     This is my personal website & blog, where you can find out more <a href="/about.html">about me</a>, get in <a href="/contact.html">contact</a>, or <a href="/blog.html">read</a> my writing on development, design, politics & anything else that happens to grab my attention. 
   </p>
 </div>
-<div class="block-text">
-  <p>
-    Thanks for dropping by.
-  </p>
+<div class="heading">
+  <h2>Recent Blog Posts</h2>
 </div>
+<div class="span-12 last">  
+{% for post in site.posts limit:2 %}
+  {% include post_excerpt.html %}    
+{% endfor %}
+</div>
+<p>
+  For older posts, have a look in the <a href="/blog.html">archive</a>.
+</p>

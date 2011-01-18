@@ -7,9 +7,7 @@ layout: default
   <article class="post">
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <div class="post byline">
-      <p>
         Filed under {% for category in page.categories %}{% if category == page.categories.last and category != page.categories.first %} and {% elsif category != page.categories.first %}, {% endif %}<a href="/blog.html?cat=cat-{{ category }}">{{ category }}</a>{% endfor %} on {{ page.date | date: "%d %b, %Y" }}
-      </p>
     </div>
     <div class="post content">
       {{ content }}    
