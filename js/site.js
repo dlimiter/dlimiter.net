@@ -24,6 +24,7 @@ function filterByCategory(className) {
   if (className === 'reset' || $("nav#post-archive-list li."+className).length == 0 ) {
     $("#post-archive-category-list a").removeClass("selected");
     $("nav#post-archive-list li").slideDown("fast");    
+    $("#post-archive-category-list a."+className).addClass("selected");
   } else {
     $("#post-archive-category-list a").removeClass("selected");
     $("nav#post-archive-list li."+className).slideDown("fast");

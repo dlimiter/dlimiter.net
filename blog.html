@@ -13,7 +13,7 @@ title:    Blog
   </p>
   <div id="post-archive-category-list">
     <p>
-      {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a> | {% endfor %} <a href="javascript:filterByCategory('reset')">show all the posts &rarr;</a>     
+      {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a>{% endfor %} <a class="reset selected" href="javascript:filterByCategory('reset')">everything &rarr;</a>     
     </p>
   </div>
 
