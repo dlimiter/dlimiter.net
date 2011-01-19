@@ -11,9 +11,11 @@ title:    Blog
   <p>
     Below is a complete listing of all my published posts. If it's a bit much you can filter the list of posts by selecting one of the following categories:
   </p>
+
+
   <div id="post-archive-category-list">
     <p>
-      {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a>{% endfor %} <a class="reset selected" href="javascript:filterByCategory('reset')">everything &rarr;</a>     
+      {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a> {% endfor %} <a class="reset selected" href="javascript:filterByCategory('reset')">everything &rarr;</a>     
     </p>
   </div>
 
