@@ -7,9 +7,9 @@
     <nav id="main">
       <div id="mainnav" class="span-7 last">
         <ul>
-          <li><a href="/about.html" {% if page.title == 'About' %}class="selected"{% endif %}>About</a></li>
-          <li><a href="/blog.html" {% if page.title =='Blog' %}class="selected"{% endif %}>Writing</a></li>
-          <li><a class="first {% if page.title == 'Home'%} selected {% endif %}" href="/">Home</a></li>
+          <li>{% if page.title != 'About' %}<a href="/about.html">{% else %}<span class="selected">{% endif %}About{% if page.title != 'About' %}</a>{% else %}</span>{% endif %}</li>
+          <li>{% if page.title !='Blog' %}<a href="/blog.html">{% else %}<span class="selected">{% endif %}Writing{% if page.title != 'Blog' %}</a>{% else %}</span>{% endif %}</li>
+          <li>{% if page.title != 'Home'%}<a href="/">{% else %}<span class="selected">{% endif %}Home{% if page.title != 'Home'%}</a>{% else %}</span>{% endif %}</li>
         </ul>
       </div>
     </nav>

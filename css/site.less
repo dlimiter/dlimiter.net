@@ -32,10 +32,10 @@ header{background-color:#fff;border-top:5px solid #000;border-bottom:1px solid @
 header h1{text-transform:none;font-size:3em;margin:0.2em 0 0.3em 0;color:@very-light-grey;letter-spacing:1px;}
 header h1 span.surname{color:@sub-text-grey;}
 nav#main li{float:right;}
-nav#main a{text-align:center;display:block;padding:1em 0 0.1em 0;letter-spacing:2px;text-transform:uppercase;font-size:0.9em;font-weight:200;margin:1em 1em 0 1em;}
+nav#main a, nav#main .selected {text-align:center;display:block;padding:1em 0 0.1em 0;letter-spacing:2px;text-transform:uppercase;font-size:0.9em;font-weight:200;margin:1em 1em 0 1em;}
 nav#main a:link,nav#main a:visited,nav#main a:active{color:@sub-text-grey;}
 nav#main a:hover{border-bottom:20px solid @base-link-blue;}
-nav#main a.selected{border-bottom:20px solid @base-text-grey;color:@very-light-grey;}
+nav#main .selected{border-bottom:20px solid @base-text-grey;color:@very-light-grey;}
 /*
 * Content
 */
@@ -46,11 +46,11 @@ span.archive-listing-date{width:90px;float:left;}
 .block-text,.post.content{text-align:justify;}
 .post.byline{color:@sub-text-grey;margin:0.5em 0;font-size: 0.9em;}
 .post.excerpt.read-more p,p a#comment-toggle{font-size:0.9em;text-align:left;margin:0;}
-#post-archive-category-list{border-top:1px dotted @light-grey;border-bottom:1px dotted @light-grey;padding:0px;}
+#post-archive-category-list{border-top:1px dotted @light-grey;border-bottom:1px dotted @light-grey;padding:0px; }
 #post-archive-category-list p{text-align:center;}
 #post-archive-category-list a{margin:5px;padding:5px;}
 #post-archive-category-list a.selected{background-color:#ddd;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
-nav#post-archive-list{margin-top:10px;}
+nav#post-archive-list{margin:1em 0;}
 nav#post-archive-list a.title{padding-left:10px;font-size:1em;}
 #archive-pointer{text-align:right;}
 pre{margin:5px 0;border:1px dotted @sub-text-grey;overflow:auto;}

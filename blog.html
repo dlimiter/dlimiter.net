@@ -18,13 +18,11 @@ title:    Blog
   </div>
 
   <nav id="post-archive-list">
-    <p>
-      <ul>
-        {% for post in site.posts %}        
-          <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a class="title" href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </p>
+    <ul>
+      {% for post in site.posts %}        
+        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span><a class="title" href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
   </nav>
   
 </div>
