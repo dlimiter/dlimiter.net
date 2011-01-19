@@ -1,5 +1,5 @@
 <article class="post excerpt">
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
+  <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3> 
   <div class="post excerpt byline">
       Filed under {% for category in post.categories %}{% if category == post.categories.last and category != post.categories.first %} and {% elsif category != post.categories.first %}, {% endif %}{% if page.title == "Blog" %}<a href="javascript:filterByCategory('cat-{{ category }}')">{% else %}<a href="/blog.html?cat=cat-{{ category }}">{% endif %}{{ category }}</a>{% endfor %} on {{ post.date | date: "%d %b, %Y" }}  
   </div>
