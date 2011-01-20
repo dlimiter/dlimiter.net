@@ -39,7 +39,6 @@ nav#main .selected{border-bottom:20px solid @base-text-grey;color:@very-light-gr
 /*
 * Content
 */
-span.archive-listing-date{width:90px;float:left;}
 .post.content{border-top:1px dotted @light-grey;border-bottom:1px dotted @light-grey;}
 .post.content.excerpt{border-top:none;border-bottom:none;border-top:1px dotted @light-grey;}
 .post.content.excerpt p{margin-bottom:0;margin-top:0.5em;}
@@ -50,8 +49,12 @@ span.archive-listing-date{width:90px;float:left;}
 #post-archive-category-list a{margin:1em 0.4em;padding:2px;text-transform:uppercase;letter-spacing:1px;font-size:0.8em;color:@sub-text-grey;font-weight:400;}
 #post-archive-category-list a.selected {border-bottom:5px solid @sub-text-grey;color:@base-text-grey;}
 #post-archive-category-list a:hover {border-bottom:5px solid @base-link-blue;color:@base-link-blue;}
+span.archive-listing-date{float:right;font-size:0.9em;}
 nav#post-archive-list{margin:1em 0;}
-nav#post-archive-list a.title{padding-left:10px;font-size:1em;}
+nav#post-archive-list a.title{
+  /*  */
+  
+font-size:1em;}
 #archive-pointer{text-align:right;}
 pre{margin:5px 0;border:1px dotted @sub-text-grey;overflow:auto;}
 code{font-size:0.8em;}
