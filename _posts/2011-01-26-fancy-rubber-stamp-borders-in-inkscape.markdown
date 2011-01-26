@@ -68,7 +68,7 @@ Merge the large circle and the border to create a filled shape, and then use the
 
 <img class="bordered" alt="screenshot" src="{{ site.url}}/img/tutorial-stamp-border/12.jpg" width="400" height="390" />
 
-And your voila! Your fancy border is ready to be incorporated into your stamp design.
+And your voila! You have a fancy border ready to be incorporated into your stamp design.
 
 <img class="bordered" alt="screenshot" src="{{ site.url}}/img/tutorial-stamp-border/tutorial-example.jpg" width="400" height="300" />
 
