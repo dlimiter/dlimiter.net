@@ -14,7 +14,7 @@ ul{list-style:none;padding:0;margin:0;}
 nav li{display:block;margin:0;padding:0;}
 body,h1,h2,h3,h4,h5{font-size:90%;color:@base-text-grey;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;}
 body{background-color:@very-light-grey;}
-h1,h2,h3,h4,h5{text-transform:uppercase;letter-spacing:1px;font-weight:400;margin:1.5em 0 0 0 ;}
+h1,h2,h3,h4,h5{text-transform:uppercase;letter-spacing:1px;font-weight:400;margin:1.5em 0 0 0;}
 h2.post-title{font-size:1.5em;margin:1em 0 0 0;font-weight:300;}
 h3.post-title{font-size:1.2em;margin:1em 0 0.5em 0;font-weight:200;}
 .post-title{text-transform:none;}
@@ -28,14 +28,15 @@ a:hover{border-bottom:1px dotted @base-link-blue;}
 /*
 * Header
 */
-header{background-color:#fff;border-top:5px solid #000;border-bottom:1px solid @base-text-grey;height:70px;}
-header h1{text-transform:none;font-size:44px;margin:10px 0 15px 0;color:@very-light-grey;letter-spacing:1px;}
+header{background-color:#fff;border-top:5px solid #000;border-bottom:1px solid @base-text-grey;height:82px;}
+header #spacer {height:20px;}
+header h1{text-transform:none;font-size:44px;margin:10px 0 10px 0;color:@very-light-grey;letter-spacing:1px;}
 header h1 span.surname{color:@sub-text-grey;}
 nav#main li{float:right;}
-nav#main a, nav#main .selected {text-align:center;display:block;padding:1em 0 0.1em 0;letter-spacing:2px;text-transform:uppercase;font-size:14px;font-weight:200;margin:1em 1em 0 1em;}
+nav#main a, nav#main .selected {text-align:center;display:block;padding:1em 0 0.1em 0;letter-spacing:2px;text-transform:uppercase;font-size:14px;font-weight:400;margin:1em 1em 0 1em;}
 nav#main a:link,nav#main a:visited,nav#main a:active{color:@sub-text-grey;}
-nav#main a:hover{border-bottom:20px solid @base-link-blue;}
-nav#main .selected{border-bottom:20px solid @base-text-grey;color:@very-light-grey;}
+nav#main a:hover{border-bottom:13px solid @base-link-blue;}
+nav#main .selected{border-bottom:12px solid @base-text-grey;color:@very-light-grey;}
 /*
 * Content
 */
@@ -90,7 +91,6 @@ footer .subtext{font-size:0.9em; font-weight:100;}
 #comments{display:none;}
 
 footer .span-3, footer .span-6 {float:left;margin-right:10px;}
-
 footer .span-3 {width:140px;}
 footer .span-6 {width:350px;}
 footer .span-3.last {width:180px; margin-right:0;}
@@ -99,3 +99,15 @@ footer .span-3.last {width:180px; margin-right:0;}
  * 404
  */
 #four_oh_four { text-align: center;margin-left:auto;margin-right:auto;} 
+
+/*
+ * Half court shot JS
+ */
+.hcs{overflow:hidden;text-align:left;}
+.hcs ul,
+.hcs *{padding:0;margin:0;border:0;outline:0;list-style-type:none;}
+.hcs ul{margin:0 -5px;}
+.hcs li{width:100px;height:75px;position:relative;display:block;padding:5px;margin:5px 5px 0 5px;background:rgba(0,0,0,0.075);-webkit-border-radius:5px;-webkit-transition:background 0.2s linear;-moz-border-radius:5px;-moz-transition:background 0.2s linear;border-radius:5px;transition:background 0.2s linear;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000)";display:table;float:left;vertical-align:middle;}
+.hcs li a{width:100px;height:75px;text-align:center;vertical-align:middle;display:table-cell;}
+.hcs li:hover{background:rgba(0,0,0,0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";}
+.hcs img{width:auto;height:auto;max-width:100px;max-height:75px;border:0;-ms-interpolation-mode:bicubic;font-size:0;float:left;}
