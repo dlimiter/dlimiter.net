@@ -27,7 +27,7 @@
     
     {% include analytics.html %}
   </head>
-  <body>
+  <body>    
     {% include header.html %}
 
     <div id="content" class="container">
@@ -35,9 +35,15 @@
         {{ content }}
       </section>
     </div>
-
+    <div id="frieze">
+    </div>
     {% include footer.html %}
+    <div id="runner">
+    </div>
+
+    {% if page.title == 'Home'% %}
     <script type="text/javascript" src ="/js/half-court-shot.jsapp.mh.min.101129.js"></script>
     <script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "dlimiter", shots: 4, goal: 'mydribbble' });</script>
+    {% endif %}
   </body>
 </html>
