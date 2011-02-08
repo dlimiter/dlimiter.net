@@ -8,8 +8,7 @@
     
     <link rel="icon" type="image/ico" href="/img/favicon.ico">  
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png"/>
-      
-    
+
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -39,8 +38,11 @@
     {% include footer.html %}
 
     {% if page.title == 'Home'% %}
+    <!--[if gt IE 6]><!-->
     <script type="text/javascript" src ="/js/half-court-shot.jsapp.mh.min.101129.js"></script>
-    <script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "dlimiter", shots: 4, goal: 'mydribbble' });</script>
+    <script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "dlimiter", shots: 4, goal: 'mydribbble' });</script>    
+    <!--<![endif]-->
+    
     {% endif %}
   </body>
 </html>
