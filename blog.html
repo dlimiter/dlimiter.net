@@ -7,27 +7,32 @@ title:    Blog
   <p>
     Thoughts, interests, inspirations, tips and unsolicited opinions of a coder and designer. Please feel free to leave comments - I'd love to hear from you. If you'd like updates of new posts, you can <a href="{{ site.feed }}">subscribe</a> to the feed.
   </p>    
-  
   <p>
-    Below is a complete listing of all my published posts. If it's a bit much you can filter the list of posts by selecting one of the following categories:
+    Below is a complete listing of previous blog posts. If it's too much to wade through, you can filter the list by selecting from the categories on the side.
   </p>
+</div>
 
 
-  <div id="post-archive-category-list">
-    <p>
-      {% for category in site.categories %}<a class="cat-{{ category | first }}" href="javascript:filterByCategory('cat-{{ category | first }}')">{{ category | first }}</a> {% endfor %} <a class="reset selected" href="javascript:filterByCategory('reset')">everything &rarr;</a>     
-    </p>
-  </div>
+<div class="block-text span-3">
+  <h2>Categories</h2>
+  <nav id="post-archive-category-list">
+    <ul>
+      {% for category in site.categories %}<li><a class="cat-{{  (category | first)  | replace:' ','-'}}" href="javascript:filterByCategory('cat-{{ (category | first) | replace:' ','-'}}')">{{ category | first }}</a></li>{% endfor %} 
+      <li><a class="reset selected" href="javascript:filterByCategory('reset')">everything &rarr;</a></li> 
+    </ul>
+  </nav>
+</div>
 
+<div class="block-text span-9 last">
   <nav id="post-archive-list">
     <ul>
       {% for post in site.posts %}        
-        <li class="{% for category in post.categories %}cat-{{ category }} {% endfor %}"><a class="title" href="{{ post.url }}">{{ post.title }}</a><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span></li>
+        <li class="{% for category in post.categories %}cat-{{ category| replace:' ','-'}} {% endfor %}"><a class="title" href="{{ post.url }}">{{ post.title }}</a><span class="archive-listing-date">{{ post.date | date: "%d %b, %Y" }}</span></li>
       {% endfor %}
     </ul>
   </nav>
-  
 </div>
+
 
 <script type="text/javascript">
   window.onload=initArchive();

@@ -1,4 +1,4 @@
-task :default => [:deploy]
+task :default => [:server]
 
 task :generate do
     system "jekyll"
