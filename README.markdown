@@ -2,7 +2,6 @@
  
 This is the structure and content of my personal blog, powered by [Jekyll][1]. 
 
-At present the generated site content is deployed manually. Eventually I hope to set it up with a hook that will manage deployment for me when I push a commit.
 
 ## Plugins
 * [less_converter.rb][2] - Jason Graham's LESS CSS converter 
