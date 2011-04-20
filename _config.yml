@@ -2,8 +2,8 @@ permalink:    /:year/:month/:day/:title
 analytics_id: UA-19957147-1
 title:        Dave Lim
 description:  Personal website of Dave Lim
-url:          http://dlimiter.net
-#url:          http://0.0.0.0:4000
+#url:          http://dlimiter.net
+url:          http://0.0.0.0:4000
 author:       Dave Lim
 email:        dave@dlimiter.net
 twitter:      http://twitter.com/dlimiter

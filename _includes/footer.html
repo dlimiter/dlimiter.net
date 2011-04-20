@@ -1,37 +1,18 @@
 <footer>  
   <div class="container"> 
-    <div class="span-3">
-      <h2>Navigate</h2>
-      <ul>
-        <li><a href="/">Home</a> <span class="subtext">the latest news</span></li>
-        <li><a href="/blog.html">Writing</a> <span class="subtext">blog archive</span></li>      
-        <li><a href="/about.html">About</a> <span class="subtext">me & the site</span></li>
+    <div class="span-12 last">
+      <h2 >Connect <span class="ampersand">&&nbsp;</span> Follow</h2>
+      {% assign size = '20' %}
+      <ul  id="contact-icons">
+        <li><a class="image-wrapper" href="{{ site.feed }}"><img src="/img/icon/rss.png" alt="my_face" height="{{ size }}" width="{{ size }}"></a>Subscribe to my <a href="{{ site.feed }}">notebook</a></li>
+          <li><a class="image-wrapper"  href="mailto:{{ site.email }}"><img src="/img/icon/mail.png" alt="my_face" height="{{ size }}" width="{{ size }}"></a>Email <a href="mailto:{{ site.email }}">dave@dlimiter.net</a></li>
+        <li><a class="image-wrapper"  href="{{ site.twitter }}"><img src="/img/icon/twitter.png" alt="my_face" height="{{ size }}" width="{{ size }}"></a>Twitter <a href="{{ site.twitter }}">twitter.com/dlimiter</a></li>
+        <li><a class="image-wrapper"  href="{{ site.dribbble }}"><img src="/img/icon/dribbble.png" alt="my_face" height="{{ size }}" width="{{ size }}"></a>Dribbble <a href="{{ site.twitter }}">dribbble.com/dlimiter</a></li>
+        <li><a class="image-wrapper"  href="{{ site.github }}"><img src="/img/icon/github.png" alt="my_face" height="{{ size }}" width="{{ size }}"></a>Github <a href="{{ site.twitter }}">githubcom.dlimiter</a></li>
+        <li><a class="image-wrapper"  href="{{ site.linkedin }}"><img src="/img/icon/linkedin.png" alt="my_face" height="{{ size }}" width="{{ size }}"></a>Linkedin <a href="{{ site.twitter }}">au.linkedin.com/in/dlimiter</a></li>
       </ul>
     </div>
 
-    <div class="span-6">
-      <h2>About Me</h2>
-      <div class="picture-frame">
-      <img class="profile-image" src="/img/blue_profile.png" alt="my_face" height="100" width="100">
-      </div>
-      <p>
-        Dave Lim is a Melbourne based web & software developer with a passion for illustration & design. 
-      </p>
-      <p>
-        Despite all evidence to the contrary, he does in fact feel kind of weird talking about himself in the third person.
-      </p>
-    </div>
-    
-    <div class="span-3 last">
-      <h2>Stay In Touch</h2>
-      <ul>
-        <li><a href="{{ site.feed }}">Feed</a> <span class="subtext">blog updates</span></li>
-        <li><a href="{{ site.dribbble }}">Dribbble</a> <span class="subtext">what I'm working on</span></li>
-        <li><a href="{{ site.twitter }}">Twitter</a> <span class="subtext">links & opinion</span></li>
-        <li><a href="mailto:{{ site.email }}">Email</a> <span class="subtext">for anything else</span></li>
-      </ul>
-    </div>
-    
     <div id="copyright" class="span-12 last">
       <p>
         Copyright &copy; Dave Lim 2010 | <a href="/colophon.html">Colophon</a>        

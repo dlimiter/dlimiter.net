@@ -1,13 +1,14 @@
 <header>
   <div class="container">
     <div id="name-title" class="span-5">
-      <h1>dlimiter<span class="surname">.net</span></h1>
+      <h1>Dave Lim</h1>
     </div>
     
     <nav id="main" class="span-7 last">
         <ul>
           <li>{% if page.title != 'About' %}<a href="/about.html">{% else %}<span class="selected">{% endif %}About{% if page.title != 'About' %}</a>{% else %}</span>{% endif %}</li>
-          <li>{% if page.title !='Blog' %}<a href="/blog.html">{% else %}<span class="selected">{% endif %}Blog{% if page.title != 'Blog' %}</a>{% else %}</span>{% endif %}</li>
+          <li>{% if page.title !='Folio' %}<a href="/folio.html">{% else %}<span class="selected">{% endif %}Folio{% if page.title != 'Portfolio' %}</a>{% else %}</span>{% endif %}</li>
+          <li>{% if page.title !='Notebook' %}<a href="/notebook.html">{% else %}<span class="selected">{% endif %}Notebook{% if page.title != 'Notebook' %}</a>{% else %}</span>{% endif %}</li>
           <li>{% if page.title != 'Home'%}<a href="/">{% else %}<span class="selected">{% endif %}Home{% if page.title != 'Home'%}</a>{% else %}</span>{% endif %}</li>
         </ul>
     </nav>

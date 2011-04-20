@@ -2,35 +2,39 @@
 layout:   default
 title:    Home 
 --- 
-<div class="block-text span-12 last">
-  <p class="bigger">
-    Hello! My name is Dave. I'm a Melbourne based web & software developer with a passion for illustration & design. 
-    This is my personal website & blog, where you can find out more <a href="/about.html">about</a> me & read my <a href="/blog.html">blog</a> on development, design, politics & anything else that grabs my attention. 
+<div class="span-2 " id="dave-img">  
+  <img id="dave" src="/img/dave.png" alt="me"> 
+</div>
+
+<div class="span-10 last">
+  <p class="first">
+    Hi! I'm a Melbourne based web <span class="ampersand">&</span> software developer with a passion for illustration <span class="ampersand">&</span> design
+  </p>
+  
+  <p class="second">    
+    This is my personal website. Here you can find out more <a href="/about.html">about</a> me <span class="ampersand">&</span>, have a look through my <a href="/folio.html">portfolio</a> or read the <a href="/notebook.html">notebook</a> for posts on development, design, art, politics <span class="ampersand">&</span> anything else that grabs my attention.
   </p>
 </div>
 
-<div class="span-7">  
-  <h2>From the blog</h2>
-  {% for post in site.posts limit:2 %}
+<div class="span-8">  
+  <h2>Latest from the notebook</h2>
+  {% for post in site.posts limit:1 %}
     {% include post_excerpt.html %}    
   {% endfor %}
   <p>
-    For older posts, have a look in the <a href="/blog.html">archive</a>.
+    For older posts, have a look in the <a href="/blog.html">notebook</a>.
   </p>
 </div>
-<div class="span-5 last">
+
+<div id="working-on" class="span-4 last">
   <h2>What I'm working on</h2>  
-  <p>
-  The latest shots from my <a href="{{ site.dribbble }}">Dribbble</a> feed:
-  </p>
   <!--[if lt IE 7]>      
   <p>
   Unfortunately, IE 6 is not capable of displaying these images without completely borking the page formatting, so they have been removed.
   </p>
   <p>
   You can go to <a href="{{ site.dribbble }}">Dribble.com</a> to see them full size, or you can download a modern standards compliant browser like <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://www.mozilla.com/en-US/firefox/">Firefox</a> or <a href="http://www.apple.com/safari/download/">Safari</a>.
-  <![endif]-->
-  <div id="mydribbble">
-  </div>  
+  <![endif]-->    
+  <div id="mydribbble" >
+  </div>
 </div>
-
