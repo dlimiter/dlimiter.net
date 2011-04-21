@@ -1,11 +1,11 @@
 <article class="post excerpt">
   <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3> 
   <div class="post excerpt content">
-      {{ post.content | truncatewords: 50, "..." }}
-      <div class="post excerpt read-more">
-        <p>
-          <a href="{{ post.url }}">read more &rarr;</a>
-        </p>
-      </div>
+    {{ post.content | truncatewords: 50, "..." }}
+    <div class="post excerpt read-more">
+      <p>
+        <a href="{{ post.url }}">read more &rarr;</a>
+      </p>
+    </div>
   </div>
 </article>

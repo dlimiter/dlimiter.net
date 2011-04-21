@@ -26,15 +26,14 @@ Layout: Deafult
 }
 
 html,body {
-  background-image: url("../img/bg_stripes.png");
-  background-repeat: repeat;
+  background-color:#fff;
 }
 
 #page {
-  .rounded-corners(20px);
+/*  .rounded-corners(20px);
   background-color:#fff;
   width:800px;
-  margin:30px auto;
+  margin:30px auto;*/
 }
 
 p.first {
@@ -42,7 +41,11 @@ p.first {
   font-size:2.3em;
   line-height:1.3em;
   margin-top:0.5em;
-  margin-bottom:0.5em ;
+  margin-bottom:0.5em;
+/*  padding:0.5em 0;
+  border-top: 6px solid @base-text-grey;
+  border-bottom: 6px solid @base-text-grey;
+  */
 }
 
 p.second{
@@ -205,7 +208,7 @@ Page: Index
 */
 /* Image is offset so tweak the div height */
 #dave-img {
-  height:250px;
+  height:210px;
   
 }
 img#dave {
@@ -222,7 +225,7 @@ footer {
   font-size: 0.9em;
   border-top: 1px solid @lightish-grey; 
   background-color: @lighter-grey;
-  border-radius:0 0 19px 19px  ;
+/*  border-radius:0 0 19px 19px  ;*/
 }
 
 ul#contact-icons li {
@@ -268,12 +271,13 @@ Include: Header
 */
 header h1 {
   text-transform: none;
-  font-size: 50px;
+  font-size: 60px;
   margin: 20px 0 10px 0;
   vertical-align: bottom;
   font-family: 'Droid Sans', arial, sans-serif;     
-  font-weight: 600;
+  font-weight: 400;
   color:@dark-grey;
+  text-indent:-5px;
 }
 
 nav#main {
@@ -288,11 +292,11 @@ nav#main li {
 
 nav#main a,nav#main .selected {
   font-family: 'Droid Sans', arial, sans-serif; 
-  padding-left: 20px;
+  padding: 0 10px;
   display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 16px;  
   font-weight: 400;
   vertical-align: bottom;
 }   
@@ -315,7 +319,7 @@ Page: Notebook
 */
 #post-archive-category-list { 
   .rounded-corners(10px);
-  border: 2px dotted @base-text-grey;
+  border: 1px solid @base-text-grey;
   padding:7px 6px;
   margin: 18px 0 20px 0;
 }
@@ -360,11 +364,48 @@ nav#post-archive-list a.title {
 }
 
 /*
+Page : folio
+*/
+#folio {
+  
+}
+
+.folio-item {
+  border-bottom: 1px dotted @light-grey;
+  margin-bottom:1em;
+}
+
+.folio-item.last {
+  border-bottom: none;
+}
+
+.folio-item .title {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top:0;
+  text-transform: none;
+}
+
+.folio-item .byline {
+  font-size:0.9em;
+}
+
+img.folio-image {
+  float:left;
+  margin: 0 10px 10px 0;
+}
+
+
+#folio a.folio-image {
+  border:none;
+}
+
+/*
 Page: About
 */
 #disclaimer{
   .rounded-corners(10px);
-  border: 2px dotted @base-text-grey;
+  border: 1px solid @base-text-grey;
   padding:10px;
   margin:0 0 20px 0;
 }
@@ -376,7 +417,7 @@ Page: About
 
 img#juggler {
   position:relative;
-  top:-40px;
+  top:-20px;
 }
 
 /* 
@@ -394,10 +435,6 @@ Page: Colopohon
 
 #colophon li.last {
   border-bottom: none;
-}
-
-p.bigger {
-  font-size: 1.5em;
 }
 
 /*
