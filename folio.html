@@ -1,13 +1,14 @@
 ---
 layout:   default
-title:    Folio
+title:    Portfolio
 ---
 <div class="span-12 last">  
   <p class="first">
     Flotsam and Jetsam of a wobbly mind - some recent work <span class="ampersand">&</span> other stuff that I've made
   </p>
+  <h2>Illustration <span class="ampersand">&</span> Logos</h2>
   <p class="second">
-    Click on any of the thumbnailed images for a larger version. 
+    Click on any of the thumbnailed images for a larger version of the full image. 
   </p>
   {% assign size = '120' %}  
 </div>
@@ -16,11 +17,13 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'social_icons' %}
+    {% assign imgtitle = 'Iconical' %}
+    
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Iconical</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Icon
       </div> 
@@ -32,11 +35,13 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'sixteen' %}
+    {% assign imgtitle = 'Sixteen' %}
+    
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Sixteen</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Illustration
       </div> 
@@ -48,11 +53,12 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'day_owl' %}
+    {% assign imgtitle = 'Day Owl' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Day Owl</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Illustration
       </div> 
@@ -64,11 +70,12 @@ title:    Folio
   
   <div class="folio-item span-12"> 
     {% assign image_name = 'night_owl' %}
+    {% assign imgtitle = 'Night Owl' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Night Owl</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Illustration
       </div> 
@@ -80,11 +87,12 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'scienceofsteph' %}
+    {% assign imgtitle = 'Science Of Steph' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Science Of Steph</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Illustration
       </div> 
@@ -96,11 +104,12 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'babushka_family' %}
+    {% assign imgtitle = 'Babushka Family' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Babushka Family</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Illustration
       </div> 
@@ -112,11 +121,12 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'bunnies' %}
+    {% assign imgtitle = 'Bunnies' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Bunnies</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Illustration
       </div> 
@@ -128,11 +138,12 @@ title:    Folio
   
   <div class="folio-item span-12">
     {% assign image_name = 'logicsquad_stamp' %}
+    {% assign imgtitle = 'Genuine Logic Squad' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Genuine Logic Squad</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Vector, Stamp
       </div> 
@@ -144,11 +155,12 @@ title:    Folio
   
   <div class="folio-item span-12 last"> 
     {% assign image_name = 'mjc_concept' %}
+    {% assign imgtitle = 'Melbourne Juggling Convention Logo Concept' %}
     <div class="span-3">
       {% include folio_image.html %}    
     </div>
     <div class="span-9 last">
-      <h2 class="title">Melbourne Juggling Convention Logo Concept</h2>
+      <h2 class="title">{{ imgtitle }}</h2>
       <div class="byline">
         Raster, Logo
       </div> 
@@ -157,6 +169,8 @@ title:    Folio
       </p>
     </div>
   </div>
+  
+  <h2>Web</h2>
   
     
 </div>

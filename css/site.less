@@ -370,6 +370,14 @@ Page : folio
   
 }
 
+#fancybox-title h2 {
+  font-size: 1.1em;
+/*  margin: 1em 0 0.5em 0;*/
+  font-weight: 200;
+  text-transform:none;
+  background-color: rgba(255,255,255,);
+}
+
 .folio-item {
   border-bottom: 1px dotted @light-grey;
   margin-bottom:1em;
@@ -379,7 +387,7 @@ Page : folio
   border-bottom: none;
 }
 
-.folio-item .title {
+.folio-item h2.title {
   font-size: 1.5em;
   font-weight: 300;
   margin-top:0;
@@ -514,4 +522,11 @@ Half court shot JS
 
 .hcs a:hover {
   border-bottom: none;
+}
+
+/*
+Fancy Box fixes 
+*/
+a#fancybox-close {
+  border-bottom:none;
 }

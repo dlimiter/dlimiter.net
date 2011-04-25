@@ -1,5 +1,19 @@
 $(document).ready(function () {
+  /* Apply fancybox to multiple items */
+
+  $("a.folio-image-wrapper").fancybox({
+   'transitionIn'   : 'elastic',
+   'transitionOut'  : 'elastic',
+   'titleShow'      : false,
+   'titlePosition' 	: 'over',
+   'cyclic'         : true,
+   'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
+       			            return '<h2>' + title +'</h2>';
+       			          }
+  });
+
 });
+
 
 function initArchive() {
   // get querystring as an array split on "&"
