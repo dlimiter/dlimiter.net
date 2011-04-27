@@ -1,0 +1,19 @@
+---
+layout:       post
+title:        "Iconical"
+description: 
+categories:     
+- design
+- illustration
+---
+
+<img alt="iconical" src="{{site.url}}/img/folio/tn/social_icons.jpg" width="120" height="120" style="padding:20px 10px 10px 0;float:left;" /> 
+My daughter is ten months old today. Rather than make you suffer through baby photos, I've decided to celebrate by giving away a set of social media icons from my <a href="{{site.url}}/folio.html">portfolio</a> that I put together a few months ago for a site redesign. It's a small set, only covering a few services I was interested in at the time, but if there's any interest I may expand it later.
+
+
+The icons are available as a selection of transparent PNGs at 24x24, 32x32, 48x48, 64x64 and 96x96 pixel resolutions and can be downloaded as a bundle [here][1].
+
+
+The icons are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. This means you can use them however you want, (including commercially) as long as you attribute me in some way for the work. Enjoy!
+
+[1]:{{site.url}}/downloads/iconical.zip
