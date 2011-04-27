@@ -225,7 +225,6 @@ footer {
   font-size: 0.9em;
   border-top: 1px solid @lightish-grey; 
   background-color: @lighter-grey;
-/*  border-radius:0 0 19px 19px  ;*/
 }
 
 ul#contact-icons li {
@@ -236,7 +235,7 @@ ul#contact-icons li {
 ul#contact-icons img {
  position:relative;
  margin:0 10px 0 0px;
- top:5px;
+ top:7px;
 }
 
 ul#contact-icons a.image-wrapper {
@@ -371,39 +370,44 @@ Page : folio
 }
 
 #fancybox-title h2 {
-  font-size: 1.1em;
-/*  margin: 1em 0 0.5em 0;*/
-  font-weight: 200;
-  text-transform:none;
-  background-color: rgba(255,255,255,);
 }
 
 .folio-item {
   border-bottom: 1px dotted @light-grey;
-  margin-bottom:1em;
+  margin-bottom: 1em;
+  padding-bottom:1em;
+}
+
+.folio-item p {
+  font-size:0.9em;
+  width:400px;
+  margin:0 auto;
+  text-align: justify;
 }
 
 .folio-item.last {
-  border-bottom: none;
-}
+/*  border-bottom: none;
+  border-right: none;
+*/}
 
 .folio-item h2.title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 300;
   margin-top:0;
   text-transform: none;
+  text-align: center;
 }
 
 .folio-item .byline {
   font-size:0.9em;
   color:@lightish-grey;
+  text-align: center;
 }
 
 img.folio-image {
-  float:left;
-  margin: 0 10px 10px 20px;
+  display: block;
+  margin: 10px auto;
 }
-
 
 #folio a.folio-image {
   border:none;

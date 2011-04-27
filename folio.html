@@ -15,162 +15,63 @@ title:    Portfolio
 
 <div id="folio">
   
-  <div class="folio-item span-12">
+  <div class="span-12 last">
     {% assign image_name = 'social_icons' %}
     {% assign imgtitle = 'Iconical' %}
-    
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Icon
-      </div> 
-      <p>
-        Work in progress set of social icons for use in site redesign. I'll make them available via the <a href="/notebook.html">notebook</a> as a set of multiple size PNGs at some point.
-      </p>
-    </div>
-  </div>
-  
-  <div class="folio-item span-12">
-    {% assign image_name = 'sixteen' %}
+    {% assign description = "Small set of large format optimised social icons I put together for a site redesign. Available as a <a href="/notebook.html">set of multiple size PNGs</a> for free download."%}
+    {% assign byline = "Vector, Icon" %}
+    {% include folio_image.html %}    
+
+    <!-- {% assign image_name = 'sixteen' %}
     {% assign imgtitle = 'Sixteen' %}
+    {% assign description = "One off poster card for my step daughter's sixteenth birthday. The leaves took <em>forever</em>." %}
+    {% assign byline = "Vector, Illustration" %}
+    {% include folio_image.html %}     -->
     
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Illustration
-      </div> 
-      <p>
-        One off poster card for my step daughter's sixteenth birthday. The leaves took <em>forever</em>.
-      </p>
-    </div>
-  </div>
-  
-  <div class="folio-item span-12">
-    {% assign image_name = 'day_owl' %}
-    {% assign imgtitle = 'Day Owl' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Illustration
-      </div> 
-      <p>
-        Early experimentation with Inkscape and new Wacom tablet. The full bundle of wallpapers at both iPhone and iPhone 4 resolutions can be found <a href="{{ site.url/2011/01/07/free-iphone-wallpaper-owls }}">here</a>.
-      </p>
-    </div>
-  </div>
-  
-  <div class="folio-item span-12"> 
-    {% assign image_name = 'night_owl' %}
-    {% assign imgtitle = 'Night Owl' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Illustration
-      </div> 
-      <p>
-        Early experimentation with Inkscape and new Wacom tablet. The full bundle of wallpapers at both iPhone and iPhone 4 resolutions can be found <a href="{{ site.url/2011/01/07/free-iphone-wallpaper-owls }}">here</a>.
-      </p>
-    </div>
-  </div>
-  
-  <div class="folio-item span-12">
-    {% assign image_name = 'scienceofsteph' %}
-    {% assign imgtitle = 'Science Of Steph' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Illustration
-      </div> 
-      <p>
-        Multi purpose avatar/character illustration.
-      </p>
-    </div>
-  </div>
-  
-  <div class="folio-item span-12">
     {% assign image_name = 'babushka_family' %}
     {% assign imgtitle = 'Babushka Family' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Illustration
-      </div> 
-      <p>
-        A poster created as a present for interstate family, with each babushka representing a family member. Done in Inkscape with most of the work built up using stacks of block shapes rather than brushes.
-      </p>
-    </div>
-  </div>
+    {% assign description = "Illustrated family portrait/poster with members as stylised babushkas" %}
+    {% assign byline = "Vector, Illustration" %}
+    {% include folio_image.html %}    
+    
   
-  <div class="folio-item span-12">
-    {% assign image_name = 'bunnies' %}
+    {% assign image_name = 'day_owl' %}
+    {% assign imgtitle = 'Day Owl' %}
+    {% assign description = "Retro iPhone wallpaper I made teaching myself Inkscape basics. The full bundle with iPhone and iPhone 4 resolutions is available  free <a href="/2011/01/07/free-iphone-wallpaper-owls">here</a>." %}
+    {% assign byline = "Vector, Illustration" %}
+    {% include folio_image.html %}    
+    
+    {% assign image_name = 'night_owl' %}
+    {% assign imgtitle = 'Night Owl' %}
+    {% assign description = "Retro iPhone wallpaper I made teaching myself Inkscape basics. The full bundle with iPhone and iPhone 4 resolutions is available  free <a href="/2011/01/07/free-iphone-wallpaper-owls">here</a>." %}
+    {% assign byline = "Vector, Illustration" %}
+    {% include folio_image.html %}    
+      
+    <!-- {% assign image_name = 'scienceofsteph' %}
+    {% assign imgtitle = 'Science Of Steph' %}
+    {% assign description = "Multi purpose avatar/character illustration." %}
+    {% assign byline = "Vector, Illustration" %}
+    {% include folio_image.html %}     -->
+      
+    <!-- {% assign image_name = 'bunnies' %}
     {% assign imgtitle = 'Bunnies' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Illustration
-      </div> 
-      <p>
-        An attempt at some cutesy artwork for a playsuit for my infant daughter.
-      </p>
-    </div>
-  </div>
+    {% assign description = "An attempt at some cutesy artwork for a playsuit for my infant daughter." %}
+    {% assign byline = "Vector, Illustration" %}
+    {% include folio_image.html %}     -->
   
-  <div class="folio-item span-12">
+  
     {% assign image_name = 'logicsquad_stamp' %}
     {% assign imgtitle = 'Genuine Logic Squad' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Vector, Stamp
-      </div> 
-      <p>
-        Basic block shaping of a vanity stamp I put together for <a href="http://logicsquad.net/">Logic Squad</a>.
-      </p>
-    </div>
-  </div>
-  
-  <div class="folio-item span-12 last"> 
-    {% assign image_name = 'mjc_concept' %}
-    {% assign imgtitle = 'Melbourne Juggling Convention Logo Concept' %}
-    <div class="span-3">
-      {% include folio_image.html %}    
-    </div>
-    <div class="span-9 last">
-      <h2 class="title">{{ imgtitle }}</h2>
-      <div class="byline">
-        Raster, Logo
-      </div> 
-      <p>
-        Raster logo concept mockup I did for the <a href="http://mjc.juggling.net.au/Melbourne_Juggling_Convention/Melbourne_Juggling_Convention.html">Melbourne Juggling Convention</a> that was used as the basis for the new convention logo. If you're interested have a look at <a href="{{ site.url }}/2010/12/13/logo-design-mjc/">this post</a> I wrote for the notebook outlining the creative process and a selection of additional concept sketches and mockups.  
-      </p>
-    </div>
-  </div>
-  
-  <h2>Web</h2>
-  
+    {% assign description = "Basic template form of a vanity stamp I put together for <a href="http://logicsquad.net/">Logic Squad</a>." %}
+    {% assign byline = "Vector, Stamp" %}
+    {% include folio_image.html %}    
     
+        
+    {% assign image_name = 'mjc_concept' %}
+    {% assign imgtitle = 'MJC Logo Concept' %}
+    {% assign description = "Logo concept mockup for the <a href="http://mjc.juggling.net.au/Melbourne_Juggling_Convention/Melbourne_Juggling_Convention.html">Melbourne Juggling Convention</a> used as the basis for their new logo. I've also written up the details of my creative process on this project in <a href="/2010/12/13/logo-design-mjc/">this post</a> in the notebook." %}
+    {% assign byline = "Raster, Logo" %}
+    {% include folio_image.html %}    
+    
+    </div>
 </div>
