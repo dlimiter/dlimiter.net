@@ -17,6 +17,35 @@ Variables and mixins
   -moz-border-radius: @radius;
 }
 
+.droidsans {
+  font-family: 'Droid Sans', arial, sans-serif; 
+}
+
+.droidserif {
+  font-family: "Droid Serif", serif;  
+}
+
+.helvetica {
+  font-family: "Helvetica Neue",Helvetica,Geneva,Verdana,Arial,sans-serif;
+}
+
+.rounded-image-border {
+   padding: 5px;
+   background: rgba(0,0,0,0.25);
+   .rounded-corners;
+   -webkit-transition: background 0.2s linear;
+   -moz-transition: background 0.2s linear;
+   transition: background 0.2s linear;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000);
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000)";
+}
+
+.rounded-image-border-hover {
+  background: rgba(255,255,255,0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
+}
+
 /*
 Layout: Deafult
 */
@@ -71,7 +100,7 @@ ul {
 
 body,h1,h2,h3,h4,h5 {
   font-size: 90%;
-  font-family: "Helvetica Neue",Helvetica,Geneva,Verdana,Arial,sans-serif;
+  .helvetica;
 }
 
 body {
@@ -188,8 +217,13 @@ article.post.excerpt {
 }
 
 img.bordered {
-  border: 2px @base-text-grey solid;
+  .rounded-image-border;
 }
+
+img.bordered:hover {
+  .rounded-image-border-hover;
+}
+
 img.post-float-left {
   float: left;
   margin: 10px 10px 10px 0;
@@ -239,7 +273,7 @@ ul#contact-icons a.image-wrapper {
 }
 
 footer h2 {
-  font-family: "Droid Serif", serif;
+  .droidserif;
   font-weight: 400;
 }
 
@@ -269,7 +303,7 @@ header h1 {
   font-size: 60px;
   margin: 20px 0 10px 0;
   vertical-align: bottom;
-  font-family: 'Droid Sans', arial, sans-serif;     
+  .droidsans;
   font-weight: 400;
   color:@dark-grey;
   text-indent:-5px;
@@ -286,7 +320,7 @@ nav#main li {
 }
 
 nav#main a,nav#main .selected {
-  font-family: 'Droid Sans', arial, sans-serif; 
+  .droidsans;
   padding: 0 10px;
   display: block;
   letter-spacing: 1px;
@@ -407,6 +441,10 @@ img.folio-image {
 
 #folio a.folio-image {
   border:none;
+}
+
+a.folio-image-wrapper {
+  border-bottom: none;
 }
 
 /*
