@@ -182,13 +182,17 @@ h3.post-title {
 
 .post.content {
   border-top: 1px dotted @light-grey;
-  border-bottom: 1px dotted @light-grey;
 }
+
 .post.content.excerpt {
   border-top: none;
   border-bottom: none;
-  border-top: 1px dotted @light-grey;
 }
+
+.post.content.excerpt img {
+  display:none;
+}
+
 .post.content.excerpt p {
   margin-bottom: 0;
   margin-top: 0.5em;
@@ -244,6 +248,11 @@ Page: Index
 img#dave {
   position:relative;
   top:10px;
+}
+
+#working-on, #latest-notes {
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
 /*
@@ -535,8 +544,8 @@ Half court shot JS
 }
 
 .hcs li a {
-  width: 84px;
-  height: 63px;
+  width: 208px;
+  height: 156px;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
@@ -550,8 +559,8 @@ Half court shot JS
 .hcs img {
   width: auto;
   height: auto;
-  max-width: 84px;
-  max-height: 63px;
+  max-width: 208px;
+  max-height: 156px;
   border: 0;
   -ms-interpolation-mode: bicubic;
   font-size: 0;

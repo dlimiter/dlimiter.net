@@ -17,8 +17,8 @@ title:    Home
   <p>I respond to emails sent to <a href="mailto:{{ site.email }}">dave@dlimiter.net</a>, so feel free to drop me line if you'd like to chat.</p>
 </div>
 
-<div class="span-8">  
-  <h2>Latest ramblings</h2>
+<div id="latest-notes" class="span-8">  
+  <h2>Latest notes</h2>
   {% for post in site.posts limit:1 %}
     {% include post_excerpt.html %}    
   {% endfor %}
