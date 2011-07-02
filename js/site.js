@@ -1,17 +1,18 @@
 $(document).ready(function () {
   /* Apply fancybox to multiple items */
-
-  $("a.folio-image-wrapper").fancybox({
-   'transitionIn'   : 'elastic',
-   'transitionOut'  : 'elastic',
-   'titleShow'      : false,
-   'titlePosition' 	: 'over',
-   'cyclic'         : true,
-   'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
-       			            return '<h2>' + title +'</h2>';
-       			          }
-  });
-
+  console.log(">>"+document.title);
+  if (document.title.search('Portfolio') != -1) {
+    $("a.folio-image-wrapper").fancybox({
+     'transitionIn'   : 'elastic',
+     'transitionOut'  : 'elastic',
+     'titleShow'      : false,
+     'titlePosition' 	: 'over',
+     'cyclic'         : true,
+     'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
+         			            return '<h2>' + title +'</h2>';
+         			          }
+    });
+  }
 });
 
 
