@@ -62,9 +62,6 @@ html {
   background-color: @lighter-grey;
 }
 
-#page {
-}
-
 p.first {
   text-align: left;
   font-size:2.3em;
@@ -405,48 +402,16 @@ nav#post-archive-list a.title {
 Page : folio
 */
 #folio {
-  
+  margin-bottom:20px;
 }
 
 #fancybox-wrap a {
   border-bottom:none;
 }
 
-.folio-item {
-  border-bottom: 1px dotted @light-grey;
-  margin-bottom: 1em;
-  padding-bottom:1em;
-}
-
-.folio-item p {
-  font-size:0.9em;
-  width:400px;
-  margin:0 auto;
-  text-align: justify;
-}
-
-.folio-item.last {
-/*  border-bottom: none;
-  border-right: none;
-*/}
-
-.folio-item h2.title {
-  font-size: 1.2em;
-  font-weight: 300;
-  margin-top:0;
-  text-transform: none;
-  text-align: center;
-}
-
-.folio-item .byline {
-  font-size:0.9em;
-  color:@lightish-grey;
-  text-align: center;
-}
-
 img.folio-image {
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 #folio a.folio-image {
@@ -455,6 +420,12 @@ img.folio-image {
 
 a.folio-image-wrapper {
   border-bottom: none;
+}
+
+.folio-item {
+  float:left;
+  margin:5px 10px 5px 0;
+  padding:0;
 }
 
 /*
@@ -530,15 +501,8 @@ Half court shot JS
   display: block;
   padding: 5px;
   margin: 5px 5px 5px 0;
-  background: rgba(0,0,0,0.25);
-  -webkit-border-radius: 5px;
-  -webkit-transition: background 0.2s linear;
-  -moz-border-radius: 5px;
-  -moz-transition: background 0.2s linear;
-  border-radius: 5px;
-  transition: background 0.2s linear;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000)";
+
+  .rounded-image-border;
   display: table;
   float: left;
   vertical-align: middle;
@@ -553,9 +517,7 @@ Half court shot JS
 }
 
 .hcs li:hover {
-  background: rgba(255,255,255,0.8);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
+  .rounded-image-border-hover;
 }
 .hcs img {
   width: auto;
@@ -578,3 +540,28 @@ Fancy Box fixes
 a#fancybox-close {
   border-bottom:none;
 }
+
+#fancybox-title { 
+  text-align: left; 
+}
+
+#fancybox-title #title-label { 
+  display: block;
+  font-size:1.2em; 
+  margin-right: 80px; 
+}
+
+#fancybox-title #closer { 
+  float: right; 
+}
+
+#fancybox-left-ico, #fancybox-right-ico  {
+  color:rgba(0,0,0,0.25);
+  font-size:1.5em;
+  .rounded-corners;
+  background-color:rgba(255,255,255,0.25);
+  padding:2px auto;
+  line-height:1.5em;
+  text-align: center;
+}
+

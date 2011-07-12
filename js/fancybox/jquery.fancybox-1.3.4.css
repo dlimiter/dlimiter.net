@@ -162,16 +162,16 @@
 	display: block;
 }
 
-#fancybox-left-ico {
-	background-image: url('fancybox.png');
-	background-position: -40px -30px;
+/*#fancybox-left-ico {
+  background-image: url('fancybox.png');
+  background-position: -40px -30px;
 }
 
 #fancybox-right-ico {
-	background-image: url('fancybox.png');
-	background-position: -40px -60px;
+  background-image: url('fancybox.png');
+  background-position: -40px -60px;
 }
-
+*/
 #fancybox-left:hover, #fancybox-right:hover {
 	visibility: visible; /* IE6 */
 }

@@ -5,16 +5,19 @@ $(document).ready(function () {
     $("a.folio-image-wrapper").fancybox({
      'transitionIn'   : 'elastic',
      'transitionOut'  : 'elastic',
-     'titleShow'      : false,
-     'titlePosition' 	: 'over',
+     'titleShow'      : true,
+     'titlePosition' 	: 'inside',
      'cyclic'         : true,
-     'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
-         			            return '<h2>' + title +'</h2>';
-         			          }
+     'showCloseButton': false,
+     'showNavArrows'  : true,
+     'titleFormat'    : formatTitle
     });
   }
 });
 
+function formatTitle(title, currentArray, currentIndex, currentOpts) {
+    return '<div id="fancybox-title"><span id="closer"><a href="javascript:;" onclick="$.fancybox.close();"><img src="/js/fancybox/closelabel.gif" /></a></span>' + (title && title.length ? '<span id="title-label">' + title + '</span>' : '' ) +  '</div>';
+}
 
 function initArchive() {
   // get querystring as an array split on "&"

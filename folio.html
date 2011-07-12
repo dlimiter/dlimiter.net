@@ -4,74 +4,55 @@ title:    Portfolio
 ---
 <div class="span-12 last">  
   <p class="first">
-    Flotsam and Jetsam of a wobbly mind - some recent work <span class="ampersand">&</span> other stuff that I've made
+    Flotsam and Jetsam of a wobbly mind - some recent work <span class="ampersand">&amp;</span> other stuff that I've made
   </p>
-  <h2>Illustration <span class="ampersand">&</span> Logos</h2>
   <p class="second">
     Click on any of the thumbnailed images for a larger version of the full image. 
   </p>
   {% assign size = '120' %}  
 </div>
 
-<div id="folio">
+<div id="folio" class="span-12 last">
+    
+  {% assign image_name = 'first_birthday' %}
+  {% assign imgtitle = 'First Birthday' %}
+  {% include folio_image.html %}    
   
-  <div class="span-12 last">
-    {% assign image_name = 'social_icons' %}
-    {% assign imgtitle = 'Iconical' %}
-    {% assign description = "Small set of large format optimised social icons I put together for a site redesign. Available as a <a href="/2011/04/27/iconical">set of multiple resolution PNGs</a> for download."%}
-    {% assign byline = "Vector, Icon" %}
-    {% include folio_image.html %}    
+  {% assign image_name = 'social_icons' %}
+  {% assign imgtitle = 'Iconical' %}
+  {% include folio_image.html %}    
 
-    <!-- {% assign image_name = 'sixteen' %}
-    {% assign imgtitle = 'Sixteen' %}
-    {% assign description = "One off poster card for my step daughter's sixteenth birthday. The leaves took <em>forever</em>." %}
-    {% assign byline = "Vector, Illustration" %}
-    {% include folio_image.html %}     -->
-    
-    {% assign image_name = 'babushka_family' %}
-    {% assign imgtitle = 'Babushka Family' %}
-    {% assign description = "Illustrated family portrait/poster with members as stylised babushkas" %}
-    {% assign byline = "Vector, Illustration" %}
-    {% include folio_image.html %}    
-    
+  {% assign image_name = 'logicsquad_stamp' %}
+  {% assign imgtitle = 'Genuine Logic Squad' %}
+  {% include folio_image.html %}    
   
-    {% assign image_name = 'day_owl' %}
-    {% assign imgtitle = 'Day Owl' %}
-    {% assign description = "Retro iPhone wallpaper I made teaching myself Inkscape basics. The full bundle with iPhone and iPhone 4 resolutions is available  free <a href="/2011/01/07/free-iphone-wallpaper-owls">here</a>." %}
-    {% assign byline = "Vector, Illustration" %}
-    {% include folio_image.html %}    
-    
-    {% assign image_name = 'night_owl' %}
-    {% assign imgtitle = 'Night Owl' %}
-    {% assign description = "Retro iPhone wallpaper I made teaching myself Inkscape basics. The full bundle with iPhone and iPhone 4 resolutions is available  free <a href="/2011/01/07/free-iphone-wallpaper-owls">here</a>." %}
-    {% assign byline = "Vector, Illustration" %}
-    {% include folio_image.html %}    
+  {% assign image_name = 'bunnies' %}
+  {% assign imgtitle = 'Bunnies' %}
+  {% include folio_image.html %}
+
+  {% assign image_name = 'scienceofsteph' %}
+  {% assign imgtitle = 'Science Of Steph' %}
+  {% include folio_image.html %}
+
+  
+  {% assign image_name = 'babushka_family' %}
+  {% assign imgtitle = 'Babushka Family' %}
+  {% include folio_image.html %}
       
-    <!-- {% assign image_name = 'scienceofsteph' %}
-    {% assign imgtitle = 'Science Of Steph' %}
-    {% assign description = "Multi purpose avatar/character illustration." %}
-    {% assign byline = "Vector, Illustration" %}
-    {% include folio_image.html %}     -->
-      
-    <!-- {% assign image_name = 'bunnies' %}
-    {% assign imgtitle = 'Bunnies' %}
-    {% assign description = "An attempt at some cutesy artwork for a playsuit for my infant daughter." %}
-    {% assign byline = "Vector, Illustration" %}
-    {% include folio_image.html %}     -->
+  {% assign image_name = 'sixteen' %}
+  {% assign imgtitle = 'sixteen' %}
+  {% include folio_image.html %}    
+
+  {% assign image_name = 'day_owl' %}
+  {% assign imgtitle = 'Day Owl' %}
+  {% include folio_image.html %}    
   
+  {% assign image_name = 'night_owl' %}
+  {% assign imgtitle = 'Night Owl' %}
+  {% include folio_image.html %}       
+              
+  {% assign image_name = 'mjc_concept' %}
+  {% assign imgtitle = 'MJC Logo Concept' %}
+  {% include folio_image.html %}    
   
-    {% assign image_name = 'logicsquad_stamp' %}
-    {% assign imgtitle = 'Genuine Logic Squad' %}
-    {% assign description = "Basic template form of a vanity stamp I put together for <a href="http://logicsquad.net/">Logic Squad</a>." %}
-    {% assign byline = "Vector, Stamp" %}
-    {% include folio_image.html %}    
-    
-        
-    {% assign image_name = 'mjc_concept' %}
-    {% assign imgtitle = 'MJC Logo Concept' %}
-    {% assign description = "Logo concept mockup for the <a href="http://mjc.juggling.net.au/Melbourne_Juggling_Convention/Melbourne_Juggling_Convention.html">Melbourne Juggling Convention</a> used as the basis for their new logo. I've also written up the details of my creative process on this project in <a href="/2010/12/13/logo-design-mjc/">this post</a> in the notebook." %}
-    {% assign byline = "Raster, Logo" %}
-    {% include folio_image.html %}    
-    
-    </div>
 </div>
