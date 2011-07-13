@@ -11,11 +11,14 @@ module Jekyll
     def setup
       return if @setup
       require 'less'
+      require 'yuicompressor'
       @setup = true
     rescue LoadError
-      STDERR.puts 'You are missing a library required for less. Please run:'
+      STDERR.puts 'You are missing a library required for less or yuicompressor. Please run:'
       STDERR.puts '  $ [sudo] gem install less'
-      raise FatalException.new("Missing dependency: less")
+      STDERR.puts '  or'
+      STDERR.puts '  $ [sudo] gem install yuicompressor'      
+      raise FatalException.new("Missing dependency: less or yuicompressor")
     end
 
     def matches(ext)
@@ -29,7 +32,7 @@ module Jekyll
     def convert(content)
       setup
       begin
-        Less::Engine.new(content).to_css
+        YUICompressor.compress_css(Less::Engine.new(content).to_css)
       rescue => e
         puts "Less Exception: #{e.message}"
       end

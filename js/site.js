@@ -1,3 +1,6 @@
+---
+---
+
 $(document).ready(function () {
   /* Apply fancybox to multiple items */
   console.log(">>"+document.title);
