@@ -33,7 +33,7 @@ Variables and mixins
 
 .rounded-image-border {
    padding: 5px;
-   background: rgba(0,0,0,0.25);
+   background-color: rgba(0,0,0,0.25);
    .rounded-corners;
    -webkit-transition: background 0.2s linear;
    -moz-transition: background 0.2s linear;
@@ -43,7 +43,7 @@ Variables and mixins
 }
 
 .rounded-image-border-hover {
-  background: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.8);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
 }
@@ -507,7 +507,6 @@ Half court shot JS
   display: block;
   padding: 5px;
   margin: 5px 5px 5px 0;
-
   .rounded-image-border;
   display: table;
   float: left;
@@ -614,7 +613,7 @@ label {
 
 #contact-form input[type="text"]:focus, #contact-form textarea:focus {
   border:2px solid @dark-grey;
-  backgound-color:#f00;
+  backgound-color:#fff;
   color:@dark-grey;
   font-weight:500;
   outline:0;
