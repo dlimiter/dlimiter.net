@@ -5,6 +5,8 @@
 Variables and mixins
 */
 @base-link:#d40055;
+@base-link-bg:#ffc3db;
+@lighterer-grey:#efefef;
 @lighter-grey:#ddd;
 @light-grey:#ccc;
 @lightish-grey:#999;
@@ -89,7 +91,7 @@ h2 .ampersand {
   
 }
 
-ul {
+ul, form ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -156,6 +158,10 @@ blockquote {
   font-size: 0.8em;
   border-left: 1px solid @base-text-grey;
   padding-left: 10px;
+}
+
+#content {
+  margin-bottom:40px;
 }
 
 /*
@@ -258,13 +264,13 @@ Include: Footer
 footer {
   margin: 0;
   padding: 0 0 5px 0;
-  font-size: 0.9em;
+  font-size: 12px;
   border-top: 1px solid @lightish-grey; 
   background-color: @lighter-grey;
 }
 
 ul#contact-icons li {
-  margin:5px 0;
+  margin:8px 0;
   display: block;
 }
   
@@ -402,7 +408,7 @@ nav#post-archive-list a.title {
 Page : folio
 */
 #folio {
-  margin-bottom:20px;
+  margin:40px 0 20px 0;
 }
 
 #fancybox-wrap a {
@@ -565,3 +571,93 @@ a#fancybox-close {
   text-align: center;
 }
 
+/*
+ Contact Form
+*/
+
+form {
+  color:@base-text-grey;
+  font-size:12px;
+}
+
+label {
+  font-weight: 200;
+}
+
+
+
+#contact-form li label {
+  display:block;
+  padding: 0;
+  margin: 8px 0;
+}
+
+#contact-form textarea {
+  resize:none; 
+  height:60px;
+}
+
+#contact-form input[type="text"] {
+  height:20px;
+}
+
+#contact-form textarea, #contact-form input[type="text"] {
+  background-color:@lighterer-grey;
+  .rounded-corners;
+  padding:5px;
+  width:270px;
+  border:2px solid @light-grey;
+  margin:0;  
+  font-weight: 200;    
+  color:@base-text-grey;
+}
+
+#contact-form input[type="text"]:focus, #contact-form textarea:focus {
+  border:2px solid @dark-grey;
+  backgound-color:#f00;
+  color:@dark-grey;
+  font-weight:500;
+  outline:0;
+}
+
+#contact-form fieldset {
+  padding:0;
+  border:none;
+  margin-top:10px;
+}
+
+input[type="submit"] {
+  padding:7px 20px;
+  font-weight: 200;
+  color: #fff;
+  background-color: @dark-grey;
+  .rounded-corners(5px);
+  border:none;
+  font-weight:400;
+  float:right;
+  letter-spacing: 1px;
+  border:1px solid @lighter-grey;
+}
+
+input[type="submit"]:hover {  
+  text-shadow: 0px -1px 2px #333, 0 0 3px #fff;
+  border:1px solid @base-link;
+} 
+
+input[type="submit"],  textarea, input[type="text"], label {
+  .helvetica;
+  font-size:12px;
+}
+
+/* Override the blueprint error style */
+.error {
+  font-weight:300;
+  color:@base-link;
+  background-color: @base-link-bg;
+  border:1px solid @base-link;
+  .rounded-corners(10px); 
+  padding:1px 10px;
+  margin:0 0 3px 0;
+  float:right;
+}
+  
