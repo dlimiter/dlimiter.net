@@ -638,9 +638,10 @@ input[type="submit"] {
   border:1px solid @lighter-grey;
 }
 
-input[type="submit"]:hover {  
+input[type="submit"]:hover, input[type="submit"]:focus {  
   text-shadow: 0px -1px 2px #333, 0 0 3px #fff;
   border:1px solid @base-link;
+  outline:none;
 } 
 
 input[type="submit"],  textarea, input[type="text"], label {
