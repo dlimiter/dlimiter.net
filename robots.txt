@@ -5,3 +5,4 @@ User-Agent: *
 Disallow: /test/
 Disallow: /old/
 Disallow: /rmit/
+Disallow: /bin/
