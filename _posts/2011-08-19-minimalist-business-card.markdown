@@ -8,7 +8,7 @@ categories:
 - web 
 ---
 
-Yesterday I came across [this short post][1] by Google developer Boris Smus, who realised that his email address actually captured more contact information than was readily apparent.
+Yesterday I came across [this short post][1] by Google developer Boris Smus, who while designing a new personal business card realised that his email address actually captured all of the contact information that he wanted to share &ndash; his personal domain, email address and twitter account.
 
 <a href="http://smus.com/minimal-business-card-design" class="image-wrapper">
   <img class="bordered" alt="screenshot" src="{{ site.url}}/img/posts/boris_smus_card_screenshot.jpg" width="500" height="221" />
