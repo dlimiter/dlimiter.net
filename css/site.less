@@ -19,16 +19,16 @@ Variables and mixins
   -moz-border-radius: @radius;
 }
 
-.droidsans {
-  font-family: 'Droid Sans', arial, sans-serif; 
+.baseserif {
+  font-family: museo-slab, serif;  
 }
 
-.droidserif {
-  font-family: "Droid Serif", serif;  
+.bodytext {
+  font-family:"Helvetica Neue",Helvetica,Geneva,Verdana,Arial,sans-serif;
 }
 
-.helvetica {
-  font-family: "Helvetica Neue",Helvetica,Geneva,Verdana,Arial,sans-serif;
+.basesans {
+  font-family: museo-sans,"Helvetica Neue",Helvetica,Geneva,Verdana,Arial,sans-serif;
 }
 
 .rounded-image-border {
@@ -99,17 +99,19 @@ ul, form ol {
 
 body,h1,h2,h3,h4,h5 {
   font-size: 90%;
-  .helvetica;
+  .basesans;
 }
 
 body {
-  font-weight: 200;  
+  font-weight: 300;  
   color: @base-text-grey;
+  line-height:1.5em;
+  .bodytext;
 }
 
 h1,h2,h3,h4,h5 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   margin: 1em 0 0 0;
   color: @dark-grey;
 }
@@ -180,7 +182,7 @@ h2.post-title {
 h3.post-title {
   font-size: 1.2em;
   margin: 1em 0 0.5em 0;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .post.content {
@@ -285,13 +287,14 @@ ul#contact-icons a.image-wrapper {
 }
 
 footer h2 {
-  .droidserif;
-  font-weight: 400;
+  font-size:100%;
+  .baseserif;
+  font-weight: 500;
 }
 
 #copyright {
   color: @base-text-grey;
-  font-size: 75%;
+  font-size: 80%;
   width: 100%;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -315,8 +318,8 @@ header h1 {
   font-size: 60px;
   margin: 20px 0 10px 0;
   vertical-align: bottom;
-  .droidsans;
-  font-weight: 400;
+  .basesans;
+  font-weight: 500;
   color:@dark-grey;
   text-indent:-5px;
 }
@@ -332,13 +335,13 @@ nav#main li {
 }
 
 nav#main a,nav#main .selected {
-  .droidsans;
+  .basesans;
   padding: 0 10px;
   display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;  
-  font-weight: 400;
+  font-weight: 500;
   vertical-align: bottom;
 }   
 
@@ -380,11 +383,11 @@ a.image-wrapper {
   letter-spacing: 1px;
   font-size: 0.8em;
   color:@dark-grey;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #post-archive-category-list a.selected {
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
   background-color: @dark-grey;
   .rounded-corners(5px);
@@ -412,7 +415,7 @@ nav#post-archive-list a.title {
 Page : folio
 */
 #folio {
-  margin:40px 0 20px 0;
+  margin:20px 0 20px 0;
 }
 
 #fancybox-wrap a {
@@ -584,7 +587,7 @@ form {
 }
 
 label {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 
@@ -611,7 +614,7 @@ label {
   width:270px;
   border:2px solid @light-grey;
   margin:0;  
-  font-weight: 200;    
+  font-weight: 300;    
   color:@base-text-grey;
 }
 
@@ -631,12 +634,12 @@ label {
 
 input[type="submit"] {
   padding:7px 20px;
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
   background-color: @dark-grey;
   .rounded-corners(5px);
   border:none;
-  font-weight:400;
+  font-weight:500;
   float:right;
   letter-spacing: 1px;
   border:1px solid @lighter-grey;
@@ -649,7 +652,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 } 
 
 input[type="submit"],  textarea, input[type="text"], label {
-  .helvetica;
+  .basesans;
   font-size:12px;
 }
 
