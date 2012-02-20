@@ -4,7 +4,7 @@ title:    Portfolio
 ---
 <div class="span-12 last">  
   <p class="first">
-    Flotsam and Jetsam of a wobbly mind – some recent work <span class="ampersand">&amp;</span> other stuff that I've made
+    Web, print <span class="ampersand">&amp;</span> digital for fun and profit&mdash;recent work <span class="ampersand">&amp;</span> other stuff that I've made
   </p>
   <p class="second">
     Click on any of the thumbnailed images for a larger version of the full image. 
@@ -13,18 +13,34 @@ title:    Portfolio
 </div>
 
 <div id="folio" class="span-12 last">
+
+  {% assign image_name = 'survstar' %}
+  {% assign imgtitle = 'SurvStar' %}
+  {% include folio_image.html %}
+
+  {% assign image_name = 'seas_the_day' %}
+  {% assign imgtitle = 'seastheday.com.au' %}
+  {% include folio_image.html %}
     
   {% assign image_name = 'first_birthday' %}
   {% assign imgtitle = 'First Birthday' %}
   {% include folio_image.html %}    
   
-  {% assign image_name = 'social_icons' %}
-  {% assign imgtitle = 'Iconical' %}
-  {% include folio_image.html %}    
+  {% assign image_name = 'this_book_belongs_to' %}
+  {% assign imgtitle = 'This Book Belongs To' %}
+  {% include folio_image.html %}
 
   {% assign image_name = 'logicsquad_stamp' %}
   {% assign imgtitle = 'Genuine Logic Squad' %}
   {% include folio_image.html %}    
+
+  {% assign image_name = 'the_art_of_juggling' %}
+  {% assign imgtitle = 'The Art of Juggling' %}
+  {% include folio_image.html %}   
+
+  {% assign image_name = 'social_icons' %}
+  {% assign imgtitle = 'Iconical' %}
+  {% include folio_image.html %} 
   
   {% assign image_name = 'bunnies' %}
   {% assign imgtitle = 'Bunnies' %}
@@ -34,7 +50,10 @@ title:    Portfolio
   {% assign imgtitle = 'Science Of Steph' %}
   {% include folio_image.html %}
 
-  
+  {% assign image_name = 'avatar' %}
+  {% assign imgtitle = 'Avatar' %}
+  {% include folio_image.html %}  
+
   {% assign image_name = 'babushka_family' %}
   {% assign imgtitle = 'Babushka Family' %}
   {% include folio_image.html %}
