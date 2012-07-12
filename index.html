@@ -2,11 +2,8 @@
 layout:   default
 title:    Home 
 --- 
-<div class="span-2 " id="dave-img">  
-  <img id="dave" src="/img/dave.png" alt="me"> 
-</div>
 
-<div class="span-10 last">
+<div class="span-10">
   <p class="first">
     Hi! I'm a software <span class="ampersand">&amp;</span> web developer. <br/>I love illustration, design <span class="ampersand">&amp;</span> the web
   </p>
@@ -17,17 +14,11 @@ title:    Home
   <p>I respond to emails sent to <a href="mailto:{{ site.email }}">dave@dlimiter.net</a>, so feel free to drop me line if you'd like to chat.</p>
 </div>
 
-<div id="latest-notes" class="span-8">  
-  <h2>Latest notes</h2>
-  {% for post in site.posts limit:1 %}
-    {% include post_excerpt.html %}    
-  {% endfor %}
-  <p>
-    For older posts, have a look in the <a href="/notebook.html">notebook</a>.
-  </p>
+<div class="span-2 last" id="dave-img">  
+  <img id="dave" src="/img/dave.png" alt="me"> 
 </div>
 
-<div id="working-on" class="span-4 last">
+<div id="working-on" class="span-4">
   <h2>What I'm working on</h2>  
   <!--[if lt IE 7]>      
   <p>
@@ -38,4 +29,14 @@ title:    Home
   <![endif]-->    
   <div id="mydribbble" >
   </div>
+</div>
+
+<div id="latest-notes" class="span-8 last">  
+  <h2>Latest notes</h2>
+  {% for post in site.posts limit:1 %}
+    {% include post_excerpt.html %}    
+  {% endfor %}
+  <p>
+    For older posts, have a look in the <a href="/notebook.html">notebook</a>.
+  </p>
 </div>

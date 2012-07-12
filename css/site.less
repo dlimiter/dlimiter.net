@@ -6,18 +6,15 @@ Variables and mixins
 */
 @base-link:#d40055;
 @base-link-bg:#ffc3db;
+
 @lighterer-grey:#efefef;
 @lighter-grey:#ddd;
 @light-grey:#ccc;
 @lightish-grey:#999;
-@base-text-grey:#666;
+@base-text-grey:#333;
 @dark-grey:#333;
 
-.rounded-corners (@radius: 5px) {
-  border-radius: @radius;
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-}
+@logo-main: "/img/logo.png";
 
 .baseserif {
   font-family: museo-slab, serif;  
@@ -31,6 +28,13 @@ Variables and mixins
   font-family: museo-sans,"Helvetica Neue",Helvetica,Geneva,Verdana,Arial,sans-serif;
 }
 
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
 .rounded-image-border {
    padding: 5px;
    background-color: rgba(0,0,0,0.25);
@@ -38,13 +42,13 @@ Variables and mixins
    -webkit-transition: background 0.2s linear;
    -moz-transition: background 0.2s linear;
    transition: background 0.2s linear;
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000);
+/*   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000);*/
    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#14000000,endColorstr=#14000000)";
 }
 
 .rounded-image-border-hover {
   background-color: rgba(255,255,255,0.8);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
+/*  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);*/
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)";
 }
 
@@ -62,6 +66,11 @@ html,body {
 
 html {
   background-color: @lighter-grey;
+}
+
+#name-title {
+	height:100px;
+	background:url(@logo-main) no-repeat 0px 10px;
 }
 
 p.first {
