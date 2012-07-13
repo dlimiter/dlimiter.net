@@ -18,7 +18,17 @@ title:    Home
   <img id="dave" src="/img/dave.png" alt="me"> 
 </div> -->
 
-<div id="working-on" class="span-4">
+<div id="latest-notes" class="span-8">  
+  <h2>Latest notes</h2>
+  {% for post in site.posts limit:1 %}
+    {% include post_excerpt.html %}    
+  {% endfor %}
+  <p>
+    For older posts, have a look in the <a href="/notebook.html">notebook</a>.
+  </p>
+</div>
+
+<div id="working-on" class="span-4 last">
   <h2>What I'm working on</h2>  
   <!--[if lt IE 7]>      
   <p>
@@ -29,14 +39,4 @@ title:    Home
   <![endif]-->    
   <div id="mydribbble" >
   </div>
-</div>
-
-<div id="latest-notes" class="span-8 last">  
-  <h2>Latest notes</h2>
-  {% for post in site.posts limit:1 %}
-    {% include post_excerpt.html %}    
-  {% endfor %}
-  <p>
-    For older posts, have a look in the <a href="/notebook.html">notebook</a>.
-  </p>
 </div>
