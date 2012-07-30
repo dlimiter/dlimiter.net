@@ -426,7 +426,6 @@ nav#post-archive-list a.title {
 Page : folio
 */
 #folio {
-  margin:20px 0 20px 0;
 }
 
 #fancybox-wrap a {
@@ -455,11 +454,24 @@ a.folio-image-wrapper {
 /*
 Page: About
 */
+#about {
+	margin-top:1.5em;
+	.first {
+		font-size:2em;
+		line-height:1em;
+		margin-top:0;
+	}
+	h2 {
+		margin-bottom:1em;
+	}
+}
+
 #disclaimer{
-  .rounded-corners(10px);
-  border: 1px solid @base-text-grey;
+  .rounded-corners(5px);
+  border: 1px dotted @base-text-grey;
   padding:10px;
   margin:0 0 20px 0;
+	text-align:center;
 }
 
 /* Image is offset so tweak the div height */
@@ -492,10 +504,10 @@ Page: Colopohon
 /*
 Comments
 */
-#comments {
+/*#comments {
   display: none;
 }
-
+*/
 
 /*
 Half court shot JS

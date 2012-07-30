@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
   /* Apply fancybox to multiple items */
-  if (document.title.search('Portfolio') != -1) {
+  if (document.title.search('dlimiter') != -1) {
     $("a.folio-image-wrapper").fancybox({
      'transitionIn'   : 'elastic',
      'transitionOut'  : 'elastic',
