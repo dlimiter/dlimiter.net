@@ -69,8 +69,8 @@ html {
 }
 
 #name-title {
-	height:100px;
-	background:url(@logo-main) no-repeat 0px 10px;
+/*	height:100px;
+	background:url(@logo-main) no-repeat 0px 10px;*/
 }
 
 p.first {
@@ -324,8 +324,12 @@ footer li {
 /*
 Include: Header
 */
+header a#logo {
+	display:block;
+	margin:10px 0 35px 0;
+}
 header h1 {
-  text-transform: none;
+/*  text-transform: none;
   font-size: 60px;
   margin: 20px 0 10px 0;
   vertical-align: bottom;
@@ -333,7 +337,7 @@ header h1 {
   font-weight: 500;
   color:@dark-grey;
   text-indent:-5px;
-}
+*/}
 
 nav#main {
   position: relative;
@@ -696,4 +700,8 @@ input[type="submit"],  textarea, input[type="text"], label {
 .post.excerpt.content a.image-wrapper {
 	display:none;
 
+}
+
+.invisible {
+	display:none;
 }
