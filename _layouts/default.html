@@ -50,7 +50,7 @@
     </div>
     {% include footer.html %}
 
-    {% if page.title != 'Notebook' %}
+    {% if page.title == null %}
     <!--[if gt IE 6]><!-->
     <script type="text/javascript" src ="/js/half-court-shot.jsapp.mh.min.101129.js"></script>
     <script type="text/javascript">var hcs = new HalfCourtShot({ jersey: "dlimiter", shots: 1, goal: 'mydribbble' });</script>    
