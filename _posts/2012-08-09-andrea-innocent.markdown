@@ -7,7 +7,7 @@ categories:
 - typography
 ---
 
-Had a really interesting guest lecture this week at with Illustrator [Andrea Innocent][1]. She talked a bit about her background and time in Japan and its influence on her style, as well as walking through her process and answering questions about pricing and licensing.
+Had a really interesting guest lecture this week at Uni with Illustrator [Andrea Innocent][1]. She talked a bit about her background and time in Japan and its influence on her style, as well as walking through her process and answering questions about pricing and licensing.
 
 I thought her work was just beautiful&mdash;the style and sensibility of the Japan influenced prints particularly resonating with me.
 
