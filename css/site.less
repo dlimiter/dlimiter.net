@@ -4,9 +4,11 @@
 /*
 Variables and mixins
 */
-@base-link:#d40055;
+/*@base-link:#d40055;*/
+@base-link:#DD6558;
 @base-link-bg:#ffc3db;
 
+@lightererer-grey:#fcfcfc;
 @lighterer-grey:#efefef;
 @lighter-grey:#ddd;
 @light-grey:#ccc;
@@ -38,6 +40,7 @@ Variables and mixins
 .rounded-image-border {
    padding: 5px;
    background-color: rgba(0,0,0,0.25);
+/*   background-color: @base-link;*/
    .rounded-corners;
    -webkit-transition: background 0.2s linear;
    -moz-transition: background 0.2s linear;
@@ -65,7 +68,7 @@ html,body {
 }
 
 html {
-  background-color: @lighter-grey;
+  background-color: @lighterer-grey;
 }
 
 #name-title {
@@ -279,7 +282,7 @@ footer {
   padding: 0 0 5px 0;
   font-size: 12px;
   border-top: 1px solid @lightish-grey; 
-  background-color: @lighter-grey;
+  background-color: @lighterer-grey;
 }
 
 ul#contact-icons li {
@@ -451,6 +454,9 @@ a.folio-image-wrapper {
   border-bottom: none;
   margin: 0 auto;	
   .rounded-image-border;
+	&:hover {
+	  .rounded-image-border-hover;		
+	}
 	.folio-image {
 		height:120px;
 		width:120px;
@@ -706,7 +712,7 @@ label {
 }
 
 #contact-form textarea, #contact-form input[type="text"] {
-  background-color:@lighterer-grey;
+  background-color:@lightererer-grey;
   .rounded-corners;
   padding:5px;
   width:270px;
