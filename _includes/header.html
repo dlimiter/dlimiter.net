@@ -13,7 +13,7 @@
           <!-- <li>{% if page.title != 'About' %}<a href="/about.html">{% else %}<span class="selected">{% endif %}About{% if page.title != 'About' %}</a>{% else %}</span>{% endif %}</li>
           <li>{% if page.title !='Portfolio' %}<a href="/folio.html">{% else %}<span class="selected">{% endif %}Portfolio{% if page.title != 'Portfolio' %}</a>{% else %}</span>{% endif %}</li> -->
           <li>{% if page.title !='Notebook' %}<a href="/notebook.html">{% else %}<span class="selected">{% endif %}Notebook{% if page.title != 'Notebook' %}</a>{% else %}</span>{% endif %}</li>
-          <li>{% if page.title != 'dlimiter'%}<a href="/">{% else %}<span class="selected">{% endif %}Home{% if page.title != 'dlimiter'%}</a>{% else %}</span>{% endif %}</li>
+          <li>{% if page.title | size == 0%}<a href="/">{% else %}<span class="selected">{% endif %}Home{% if page.title | size == 0%}</a>{% else %}</span>{% endif %}</li>
         </ul>
     </nav>
   </div>

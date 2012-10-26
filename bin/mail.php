@@ -49,7 +49,7 @@ $mail->IsSMTP();
 $mail->SMTPAuth = true;
 $mail->Host     = "mail.dlimiter.net";
 $mail->Username = "formbot+dlimiter.net";
-$mail->Password =  "CatD0gWh1stl3!";
+$mail->Password =  ",}H{RE06hs-9!";
 $mail->Port     = 587;
 
 $mail->From     = $fromaddress;
