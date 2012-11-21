@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-rvm 1.9.2@dlimiter.net
+rvm 1.9.3@dlimiter.net
