@@ -7,7 +7,7 @@ categories:
 - typography
 ---
 
-<img  alt="Bariol says hello" src="http://www.bariol.com/images/bariole01.png" width="700" height="307" />
+<img  alt="Bariol says hello" src="http://www.bariol.com/images/bariolfont-01.png" width="700" height="307" />
 [Bariol][1] is a lovely new(ish) font from [Atipo][3] that I came across a month or so ago. It's a beautiful rounded grotesk in 4 weights; the regular weight is free for a tweet and the other three are available under a very reasonable pay&ndash;what&ndash;you&ndash;like model.
 
 It comes up today, because they've just released an accompanying icon font set, [Bariol Icons][2] under a similar model. Cheap, lovely and well worth a look for a beginning or student designer looking for a good investment.
