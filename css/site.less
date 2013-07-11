@@ -784,3 +784,31 @@ input[type="submit"],  textarea, input[type="text"], label {
 .invisible {
 	display:none;
 }
+
+a.downloadbutton {
+  text-align:center;
+  .rounded-corners(5px); 
+  background:#DD6558;
+  color:#fff;
+  width: auto;
+  display:inline-block;
+  padding:1em;
+  margin:1em auto;
+  .title {
+    font-size:2em;
+    margin-bottom:0.5em;
+  }
+  .description { 
+    font-size:1.2em;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-bottom:0.5em;    
+  }
+  .filetype {
+    font-size:1.4em;    
+  }
+  &:hover {
+    background:#aaa;
+    border:none;
+  }
+}
